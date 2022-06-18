@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="shortcut icon" href="images/logo-3.jpg" type="image/x-icon">
     <meta name="description" content="E-Commerce, compra desde tu casa">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,11 +13,11 @@
     <header>
         <nav>
             <ul>
-                <a href="index.html"><li>Incio</li></a>
-                <a href="pages/productos.html"><li>Productos</li></a>
-                <a href="pages/servicios.html"><li>Servicios</li></a>
-                <a href="pages/sobre-mi.html"><li>Sobre Mi</li></a>
-                <a href="pages/contacto.html"><li>Contacto</li></a>
+                <li><a href="index.html">Incio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/sobre-mi.html">Sobre Mi</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -25,25 +26,37 @@
     <div class="titulo2"><h2>Nuestros Productos</h2></div>
     <section class="lista-productos">
         <article class="producto">
-            <img src="images/pastel-durazno-2.jpg" alt="Pastel de duraznos">
-            <h4 class="nombre-producto">Pastel de Duraznos</h4>
-            <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y duraznos</p>
-            <span class="precio-producto">700$</span>
-            <a href="#" target="_blank"><div class="btn-pedir">Comprar</div></a>
+            <div class="imagen-producto">
+                <img src="images/pastel-durazno-2.jpg" alt="Pastel de duraznos">
+            </div>
+            <div class="detalles-producto">
+                <h4 class="nombre-producto">Pastel de Duraznos</h4>
+                <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y duraznos</p>
+                <span class="precio-producto">700$</span>
+                <a href="#" target="_blank"><div class="btn-pedir">Comprar</div></a>
+            </div>
         </article>
         <article class="producto">
-            <img src="images/tarta-chocolate.jpg" alt="Tarta de chocolate">
-            <h4 class="nombre-producto">Tarta de Chocolate</h4>
-            <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y chocolate</p>
-            <span class="precio-producto">650$</span>
-            <a href="#" target="_blank"><div class="btn-pedir">Comprar</div></a>
+            <div class="imagen-producto">
+                <img src="images/tarta-chocolate.jpg" alt="Tarta de chocolate">
+            </div>
+            <div class="detalles-producto">
+                <h4 class="nombre-producto">Tarta de Chocolate</h4>
+                <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y chocolate</p>
+                <span class="precio-producto">650$</span>
+                <a href="#" target="_blank"><div class="btn-pedir">Comprar</div></a>
+            </div>
         </article>
         <article class="producto">
-            <img src="images/tarta-frutilla.jpg" alt="Tarta de frutillas">
-            <h4 class="nombre-producto">Tarta de Frutilla</h4>
-            <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y Frutilla</p>
-            <span class="precio-producto">800$</span>
-            <a href="#" target="_blank"><div class="btn-pedir">Comprar</div></a>
+            <div class="imagen-producto">
+                <img src="images/tarta-frutilla.jpg" alt="Tarta de frutillas">
+            </div>
+            <div class="detalles-producto">
+                <h4 class="nombre-producto">Tarta de Frutilla</h4>
+                <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y Frutilla</p>
+                <span class="precio-producto">800$</span>
+                <a href="#" target="_blank"><div class="btn-pedir">Comprar</div></a>
+            </div>
         </article>
         <a href="pages/productos.html" ><div class="redireccionamiento">Ver más ></div></a>
     </section>
@@ -55,39 +68,49 @@
             <p>Aboná tu pago por medio de transferencia bancaria.<i>*Deberás subir un comprobante de la transacción*</i></p>
             <img src="images/transferencia.png" alt="transferencia bancaria">
         </article>
+        <div class="separador-contenido"></div>
         <article class="medio-mercado-pago">
             <h4>MERCADO PAGO</h4>
             <p>Podes pagar con tarjetas de debito, crédito o con saldo disponible en cuenta.<i>*Se aplica un cargo adicional*</i></p>
             <img src="images/mercadopago.png" alt="mercado pago">
         </article>
-
     </section>
-    <!-- ENVIOS -->
-    <div class="titulo2"><h2>Envios</h2></div>
-    <section class="informacion-envios">
-        <img src="images/envios.jpg" alt="Envios">
-        <h4>A DOMICILIO</h4>
-        <p>Enviamos tu pedido a domicilio en una hora acordada.</p>
-    </section>
-    <!-- HORARIOS -->
-    <div class="titulo2"><h2>Horarios</h2></div>
-    <section class="informacion-horarios">
-        <img src="images/horario.png" alt="Hararios">
-        <h4>MAÑANA</h4>
-        <p>08:00 a 12:30</p>
-        <h4>TARDE</h4>
-        <p>14:00 a 21:00</p>
+    <section class="informacion-complementaria">
+        <!-- ENVIOS -->
+        <article class="envios">
+            <div class="titulo2"><h2>Envios</h2></div>
+            <div class="detalle-envio">
+                <img src="images/envios.jpg" alt="Envios">
+                <div class="informacion">
+                    <h4>A DOMICILIO</h4>
+                    <p>Enviamos tu pedido a domicilio en una hora acordada.</p>
+                </div>
+            </div>
+        </article>
+        <!-- HORARIOS -->
+        <article class="horarios">
+            <div class="titulo2"><h2>Horarios</h2></div>
+            <div class="detalle-horarios">
+                <img src="images/horario.png" alt="Hararios">
+                <div class="informacion">
+                    <h4>MAÑANA</h4>
+                    <p style="padding-bottom: 20px;">08:00 a 12:30</p>
+                    <h4>TARDE</h4>
+                    <p>14:00 a 21:00</p>
+                </div>
+            </div>
+        </article>
     </section>
     <!-- PIE DE PAGINA -->
     <footer>
         <div class="box-footer">
             <h3>Menu</h3>
             <ul>
-                <a href="index.html"><li>Incio</li></a>
-                <a href="pages/productos.html"><li>Productos</li></a>
-                <a href="pages/servicios.html"><li>Servicios</li></a>
-                <a href="pages/sobre-mi.html"><li>Sobre Mi</li></a>
-                <a href="pages/contacto.html"><li>Contacto</li></a>
+                <li><a href="index.html">Incio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/sobre-mi.html">Sobre Mi</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
         <div class="box-footer">
