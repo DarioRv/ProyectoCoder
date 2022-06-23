@@ -15,6 +15,7 @@ body{
 }
 /* TITULOS */
 h1{
+    text-align: center;
     font-size: 56px;
 }
 h2{
@@ -30,6 +31,9 @@ p{
     font-size: 18px;
 }
 /* MENU DE NAVEGACION */
+.menu-mobile{
+    display: none;
+}
 header{
     width: 100%;
     position: sticky;
@@ -46,11 +50,51 @@ nav ul li{
     padding: 5px 15px;
     background-color: #FF006E;
     border-radius: 10px;
+    transition: .3s ease all;
+}
+nav ul li:hover{
+    transform: scale(1.1);
 }
 nav ul li a{
     text-decoration: none;
     font-size: 36px;
     color: white;
+}
+@media screen and (max-width: 380px){
+    h2{
+        text-align: center;
+    }
+    .menu-mobile{
+        width: 100%;
+        font-size: 36px;
+        font-weight: bold;
+        color: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 50px 5px 50px;
+        background-color: #FF006E;
+    }
+    .menu-mobile a{
+        list-style: none;
+        text-decoration: none;
+        color: #FFF;
+    }
+    nav{
+        background-color: #FF006E;
+    }
+    nav ul{
+        display: none;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 0;
+        border-radius: 0%;
+        border-top: 2px solid #FFF;
+    }
+    .menu-mobile:hover + nav ul{
+        display: block;
+    }
 }
 /* --------------- ESTILOS DE HTML INDEX ---------------*/
 /* LISTADO DE PRODUCTOS */
@@ -58,12 +102,14 @@ nav ul li a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 30px;
 }
 .lista-productos .producto{
     width: 240px;
-    margin: 0px 40px 0 0;
+    /*margin: 0px 40px 0 0;*/
     border-radius: 5px;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
+    background-image: url(../images/background-pastel-2.png);
 }
 .lista-productos .producto h4{
     font-size: 22px;
@@ -93,6 +139,10 @@ nav ul li a{
     border-radius: 5px;
     background-color: #FF006E;
     color: #FFF;
+    transition: .3s ease all;
+}
+.producto .detalles-producto .btn-pedir:hover{
+    background-color: #F04589;
 }
 .producto .detalles-producto a{
     text-decoration: none;
@@ -103,6 +153,10 @@ nav ul li a{
     border-radius: 5px;
     text-align: center;
     background-color: #FF006E;
+    transition: .3s ease all;
+}
+.lista-productos .redireccionamiento:hover{
+    transform: translateX(25px);
 }
 .lista-productos a{
     text-decoration: none;
@@ -114,7 +168,8 @@ nav ul li a{
 .formas-de-pago{
     width: fit-content;
     border-radius: 5px;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
+    background-image: url(../images/background-pastel-2.png);
     padding: 40px;
     display: flex;
 }
@@ -252,6 +307,9 @@ footer{
     background-color: #3A86FF;
     color: #FFF;
 }
+form input[type="text"]:focus, form input[type="number"]:focus, form textarea:focus{
+    background-color: #ecf3ff;
+}
 input[name="nombre"]{
     grid-area: nombre;
 }
@@ -318,4 +376,48 @@ input[type="submit"]{
 }
 .medios-contacto ul li span{
     margin-left: 30px;
+}
+
+
+/*-------------------- MEDIA QUERIE --------------------*/
+@media screen and (max-width: 380px){
+    /* HTML INDEX*/
+    .lista-productos{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .btn-pedir{
+        justify-self: center;
+    }
+    .formas-de-pago{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .informacion-complementaria{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    /* HTML SERVICIOS */
+    .formulario-pedido{
+        width: 100%;
+    }
+    .formulario-pedido form{
+        grid-template-columns: auto;
+        grid-template-rows: 35px 35px 35px 35px 300px 35px 35px;
+        grid-template-areas: "nombre" "telefono" "direccion" "presupuesto" "descripcion" "submit" "reset";
+    }
+    /* HTML SOBRE MI */
+    .sobre-mi{
+        width: 100%;
+    }
 }
