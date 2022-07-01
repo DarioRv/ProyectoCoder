@@ -10,8 +10,7 @@ body{
     font-family: 'Raleway', sans-serif, Verdana;
     width: 95%;
     margin: 0 auto;
-    background-image: url(../images/background-pastel.png);
-    background-attachment: fixed;
+    background-image: url(../images/background.jpg);
 }
 /* TITULOS */
 h1{
@@ -20,15 +19,15 @@ h1{
 }
 h2{
     font-size: 32px;
-    padding: 50px 0 10px 0;
+    padding: 50px 0 25px 0;
     color: var(--principal);
     text-decoration: underline;
 }
 h4{
-    font-size: 24px;
+    font-size: 26px;
 }
 p{
-    font-size: 18px;
+    font-size: 24px;
 }
 /* MENU DE NAVEGACION */
 .menu-mobile{
@@ -60,9 +59,25 @@ nav ul li a{
     font-size: 36px;
     color: white;
 }
-@media screen and (max-width: 380px){
+.logo{
+    background-color: unset;
+    padding: 0;
+    border-radius: 50%;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 410px){
     h2{
         text-align: center;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 22px;
     }
     .menu-mobile{
         width: 100%;
@@ -92,6 +107,9 @@ nav ul li a{
         border-radius: 0%;
         border-top: 2px solid #FFF;
     }
+    .logo{
+        display: none;
+    }
     /* .menu-mobile:hover + nav ul{
         display: block;
     } */
@@ -105,7 +123,7 @@ nav ul li a{
     gap: 30px;
 }
 .lista-productos .producto{
-    width: 240px;
+    width: 360px;
     /*margin: 0px 40px 0 0;*/
     border-radius: 5px;
     /*background-color: #F2F2F2;*/
@@ -115,36 +133,45 @@ nav ul li a{
     font-size: 22px;
 }
 .lista-productos .producto img{
-    width: 240px;
-    height: 150px;
+    width: 360px;
+    height: 220px;
     border-radius: 5px 5px 0 0;
 }
 .producto .detalles-producto{
-    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 0 0px;
+    text-align: center;
 }
 .producto .detalles-producto .nombre-producto{
+    color: var(--principal);
+    text-decoration: underline;
     margin: 10px 0;
 }
 .producto .detalles-producto .descripcion-producto{
     margin: 8px 0 15px 0;
-    font-size: 18px;
+    font-size: 22px;
 }
 .producto .detalles-producto .precio-producto{
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 32px;
 }
 .producto .detalles-producto .btn-pedir{
-    width: fit-content;
-    padding: 10px 8px;
+    width: auto;
+    padding: 15px 8px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     background-color: #FF006E;
     color: #FFF;
     transition: .3s ease all;
 }
 .producto .detalles-producto .btn-pedir:hover{
     background-color: #F04589;
+    font-size: 18px;
 }
 .producto .detalles-producto a{
+    width: 100%;
     text-decoration: none;
 }
 .lista-productos .redireccionamiento{
@@ -166,7 +193,7 @@ nav ul li a{
 
 /* FORMAS DE PAGO */
 .formas-de-pago{
-    width: fit-content;
+    width: 100%;
     border-radius: 5px;
     /*background-color: #F2F2F2;*/
     background-image: url(../images/background-pastel-2.png);
@@ -216,6 +243,7 @@ nav ul li a{
 .envios img, .horarios img{
     width: 280px;
     height: 240px;
+    border-radius: 5px 0 0 5px;
 }
 .detalle-envio .informacion h4, .detalle-horarios .informacion{
     text-align: center;
@@ -279,7 +307,11 @@ footer{
     height: 50px;
     margin: 20px 0;
     background-color: #FF006E;
-
+    transition: .3s ease all;
+}
+.cargar-mas:hover{
+    cursor: pointer;
+    background-color: #F04589;
 }
 
 /* --------------- ESTILOS DE HTML SERVICIOS ---------------*/
@@ -380,7 +412,7 @@ input[type="submit"]{
 }
 /* --------------- ESTILOS DE HTML CONTACTO ---------------*/
 .medios-contacto p{
-    font-size: 22px;
+    font-size: 24px;
     margin: 20px 0;
 }
 .medios-contacto ul{
@@ -402,7 +434,7 @@ input[type="submit"]{
 
 
 /*-------------------- MEDIA QUERIE --------------------*/
-@media screen and (max-width: 380px){
+@media screen and (max-width: 410px){
     /* HTML INDEX*/
     .lista-productos{
         display: grid;
