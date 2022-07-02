@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Josefin+Sans:wght@290&family=Raleway:wght@300&display=swap');
-:root{--principal: #FF006E;}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200&family=Josefin+Sans:wght@290&family=Raleway:wght@300&display=swap');
+:root{
+    --principal: #FF006E;
+    --secundario: #3A86FF;
+}
 
 *{
     margin: 0;
@@ -15,7 +18,10 @@ body{
 /* TITULOS */
 h1{
     text-align: center;
-    font-size: 56px;
+    font-size: 76px;
+    font-family: Dancing Script;
+    color: #FFF;
+    text-shadow: 2px  0px 0px #FF006E, 0px  2px 0px #FF006E, -2px  0px 0px #FF006E, 0px -2px 0px #FF006E;
 }
 h2{
     font-size: 32px;
@@ -320,12 +326,13 @@ footer{
     width: fit-content;
     margin-top: 30px;
     padding: 40px;
+    border-radius: 5px;
 }
 .formulario-pedido h3{
     font-size: 22px;
     margin-bottom: 20px;
 }
-.formulario-pedido form input[type="text"], form input[type="number"]{
+.formulario-pedido form input[type="text"], form input[type="tel"]{
     padding: 10px;
     font-family: 'Raleway', sans-serif, Verdana;
     font-size: 18px;
@@ -349,8 +356,15 @@ footer{
     border: none;
     background-color: #3A86FF;
     color: #FFF;
+    cursor: pointer;
+    transition: .1s ease all;
 }
-form input[type="text"]:focus, form input[type="number"]:focus, form textarea:focus{
+.formulario-pedido form input[type="submit"]:hover, form input[type="reset"]:hover{
+    border: 2px solid #3A86FF;
+    color: #3A86FF;
+    background-color: #FFF;
+}
+form input[type="text"]:focus, form input[type="tel"]:focus, form textarea:focus{
     background-color: #ecf3ff;
 }
 input[name="nombre"]{
@@ -411,27 +425,60 @@ input[type="submit"]{
     margin-top: 10px;
 }
 /* --------------- ESTILOS DE HTML CONTACTO ---------------*/
+.medios-contacto{
+    width: fit-content;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "fondo-facebook fondo-instagram fondo-whatsapp" "facebook instagram whatsapp";
+}
 .medios-contacto p{
-    font-size: 24px;
     margin: 20px 0;
 }
-.medios-contacto ul{
-    list-style: none;
-    
+.medios-contacto a{
+    text-decoration: underline #FFF;
 }
-.medios-contacto ul li{
-    margin: 20px 0;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: bold;
+.fondo-whatsapp, .fondo-facebook, .fondo-instagram{
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondo-whatsapp{
+    grid-area: fondo-whatsapp;
+    background-image: url(../images/whatsapp.jpg);
+}
+.fondo-instagram{
+    grid-area: fondo-instagram;
+    background-image: url(../images/instagram.jpg);
+}
+.fondo-facebook{
+    grid-area: fondo-facebook;
+    background-image: url(../images/facebook.png);
+}
+.whatsapp, .facebook, .instagram{
+    width: auto;
     display: flex;
-    align-items: center;
-    cursor: pointer;
+    justify-content: center;
+    padding: 20px 0px;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: bold;
 }
-.medios-contacto ul li span{
-    margin-left: 30px;
+.whatsapp{
+    background-color: #00bb2d;
+    grid-area: whatsapp;
 }
-
+.facebook{
+    background-color: #3b5998;
+    grid-area: facebook;
+}
+.instagram{
+    background-color: #ff008f;
+    grid-area: instagram;
+}
 
 /*-------------------- MEDIA QUERIE --------------------*/
 @media screen and (max-width: 410px){
@@ -479,5 +526,13 @@ input[type="submit"]{
     /* HTML SOBRE MI */
     .sobre-mi{
         width: 100%;
+    }
+    /* HTML CONTACTO */
+    .medios-contacto{
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "fondo-facebook" "facebook" "fondo-instagram" "instagram" "fondo-whatsapp" "whatsapp";
     }
 }
