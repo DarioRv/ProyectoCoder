@@ -15,6 +15,7 @@
         <nav>
             <div class="menu-mobile"><a href="#menu">Menu</a> <i class="gg-menu"></i></div>
             <ul>
+                <li class="logo"><a href="../index.html"><img src="../images/logo-3.jpg" alt="Pasteleria"></a></li>
                 <li><a href="../index.html">Incio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -23,22 +24,24 @@
             </ul>
         </nav>
     </header>
-    <div class="titulo1"><h1>¡Bienvenido!</h1></div>
-    <!-- PIE DE PAGINA -->
-    <div class="titulo2"><h2>¡Adquiere Nuestros Servicios!</h2></div>
-    <p>¿Deseas hacer un pedido mas perzonalida y que se adapte a tus gustos?</p>
-    <div class="formulario-pedido">
-        <h3>Llena el siguiente formulario</h3>
-        <form action="" method="GET" enctype="application/x-www-form-urlencoded">
-            <input type="text" name="nombre" placeholder="Nombre *" required>
-            <input type="number" name="telefono" placeholder="Telefono *" required>
-            <input type="text" name="direccion" placeholder="Dirección *" required>
-            <input type="text" name="presupuesto" maxlength="6" placeholder="Presupuesto (opcional)">
-            <textarea name="descripcion" maxlength="255" placeholder="Describenos tu orden personalizada y nos pondremos en contacto contigo en la brevedad." required></textarea>
-            <input type="reset" value="LIMPIAR">
-            <input type="submit" value="ENVIAR">
-        </form>
-    </div>
+    <main>
+        <div class="titulo1"><h1>¡Bienvenido!</h1></div>
+        <!-- PIE DE PAGINA -->
+        <div class="titulo2"><h2>¡Adquiere Nuestros Servicios!</h2></div>
+        <p>¿Deseas hacer un pedido mas perzonalida y que se adapte a tus gustos?</p>
+        <div class="formulario-pedido">
+            <h3>Llena el siguiente formulario</h3>
+            <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+                <input type="text" name="nombre" placeholder="Nombre *" autocomplete="off" required>
+                <input type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Telefono *" autocomplete="off" required>
+                <input type="text" name="direccion" placeholder="Dirección *" autocomplete="off" required>
+                <input type="text" name="presupuesto" maxlength="6" placeholder="Presupuesto (opcional)" autocomplete="off">
+                <textarea name="descripcion" maxlength="255" placeholder="Describenos tu orden personalizada y nos pondremos en contacto contigo en la brevedad." required></textarea>
+                <input type="reset" value="LIMPIAR">
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </main>
     <footer>
         <div class="box-footer">
             <h3>Menu</h3>

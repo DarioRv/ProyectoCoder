@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Josefin+Sans:wght@290&family=Raleway:wght@300&display=swap');
-:root{--principal: #FF006E;}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200&family=Josefin+Sans:wght@290&family=Raleway:wght@300&display=swap');
+:root{
+    --principal: #FF006E;
+    --secundario: #3A86FF;
+}
 
 *{
     margin: 0;
@@ -8,27 +11,34 @@
 }
 body{
     font-family: 'Raleway', sans-serif, Verdana;
+    background-image: url(../images/background.jpg);
+}
+main{
     width: 95%;
     margin: 0 auto;
-    background-image: url(../images/background-pastel.png);
-    background-attachment: fixed;
 }
 /* TITULOS */
 h1{
     text-align: center;
-    font-size: 56px;
+    margin-top: 30px;
+    font-size: 76px;
+    font-family: Dancing Script;
+    color: #FFF;
+    text-shadow: 2px  0px 0px #FF006E, 0px  2px 0px #FF006E, -2px  0px 0px #FF006E, 0px -2px 0px #FF006E;
 }
 h2{
+    text-align: center;
     font-size: 32px;
-    padding: 50px 0 10px 0;
+    padding: 70px 0 25px 0;
     color: var(--principal);
     text-decoration: underline;
 }
 h4{
-    font-size: 24px;
+    font-size: 26px;
 }
 p{
-    font-size: 18px;
+    text-align: center;
+    font-size: 24px;
 }
 /* MENU DE NAVEGACION */
 .menu-mobile{
@@ -37,6 +47,10 @@ p{
 header{
     width: 100%;
     position: sticky;
+}
+nav{
+    background-color: #FF006E;
+    border-radius: 0 0 5px 5px;
 }
 nav ul{
     list-style: none;
@@ -47,22 +61,35 @@ nav ul{
 }
 nav ul li{
     margin: 10px;
-    padding: 5px 15px;
-    background-color: #FF006E;
-    border-radius: 10px;
+    padding: 0 15px;
     transition: .3s ease all;
 }
 nav ul li:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    text-decoration: underline;
 }
 nav ul li a{
     text-decoration: none;
     font-size: 36px;
     color: white;
 }
+.logo{
+    background-color: unset;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 @media screen and (max-width: 410px){
     h2{
         text-align: center;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 22px;
     }
     .menu-mobile{
         width: 100%;
@@ -92,6 +119,9 @@ nav ul li a{
         border-radius: 0%;
         border-top: 2px solid #FFF;
     }
+    .logo{
+        display: none;
+    }
     /* .menu-mobile:hover + nav ul{
         display: block;
     } */
@@ -105,7 +135,7 @@ nav ul li a{
     gap: 30px;
 }
 .lista-productos .producto{
-    width: 240px;
+    width: 360px;
     /*margin: 0px 40px 0 0;*/
     border-radius: 5px;
     /*background-color: #F2F2F2;*/
@@ -115,36 +145,44 @@ nav ul li a{
     font-size: 22px;
 }
 .lista-productos .producto img{
-    width: 240px;
-    height: 150px;
+    width: 360px;
+    height: 220px;
     border-radius: 5px 5px 0 0;
 }
 .producto .detalles-producto{
-    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .producto .detalles-producto .nombre-producto{
+    color: var(--principal);
+    text-decoration: underline;
     margin: 10px 0;
 }
 .producto .detalles-producto .descripcion-producto{
     margin: 8px 0 15px 0;
-    font-size: 18px;
+    font-size: 22px;
 }
 .producto .detalles-producto .precio-producto{
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 32px;
 }
 .producto .detalles-producto .btn-pedir{
-    width: fit-content;
-    padding: 10px 8px;
+    width: auto;
+    padding: 15px 8px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     background-color: #FF006E;
     color: #FFF;
     transition: .3s ease all;
 }
 .producto .detalles-producto .btn-pedir:hover{
     background-color: #F04589;
+    font-size: 18px;
 }
 .producto .detalles-producto a{
+    width: 100%;
     text-decoration: none;
 }
 .lista-productos .redireccionamiento{
@@ -166,12 +204,14 @@ nav ul li a{
 
 /* FORMAS DE PAGO */
 .formas-de-pago{
-    width: fit-content;
+    width: 100%;
     border-radius: 5px;
     /*background-color: #F2F2F2;*/
     background-image: url(../images/background-pastel-2.png);
     padding: 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
 }
 .formas-de-pago img{
     width: 240px;
@@ -216,6 +256,7 @@ nav ul li a{
 .envios img, .horarios img{
     width: 280px;
     height: 240px;
+    border-radius: 5px 0 0 5px;
 }
 .detalle-envio .informacion h4, .detalle-horarios .informacion{
     text-align: center;
@@ -233,9 +274,9 @@ nav ul li a{
 footer{
     width: 100%;
     min-width: fit-content;
-    margin: 50px 0 30px;
+    margin-top: 50px;
     background-color: #263144;
-    border-radius: 10px;
+    border-radius: 5px 5px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -247,6 +288,9 @@ footer{
 .box-footer ul li a{
     text-decoration: none;
     color: #FFF;
+}
+.box-footer ul li a:hover{
+    text-decoration: underline;
 }
 .box-footer ul li{
     list-style: none;
@@ -279,21 +323,27 @@ footer{
     height: 50px;
     margin: 20px 0;
     background-color: #FF006E;
-
+    transition: .3s ease all;
+}
+.cargar-mas:hover{
+    cursor: pointer;
+    background-color: #F04589;
 }
 
 /* --------------- ESTILOS DE HTML SERVICIOS ---------------*/
 .formulario-pedido{
     background-image: url(../images/background-pastel-2.png);
     width: fit-content;
+    margin: 0 auto;
     margin-top: 30px;
     padding: 40px;
+    border-radius: 5px;
 }
 .formulario-pedido h3{
     font-size: 22px;
     margin-bottom: 20px;
 }
-.formulario-pedido form input[type="text"], form input[type="number"]{
+.formulario-pedido form input[type="text"], form input[type="tel"]{
     padding: 10px;
     font-family: 'Raleway', sans-serif, Verdana;
     font-size: 18px;
@@ -317,8 +367,15 @@ footer{
     border: none;
     background-color: #3A86FF;
     color: #FFF;
+    cursor: pointer;
+    transition: .1s ease all;
 }
-form input[type="text"]:focus, form input[type="number"]:focus, form textarea:focus{
+.formulario-pedido form input[type="submit"]:hover, form input[type="reset"]:hover{
+    border: 2px solid #3A86FF;
+    color: #3A86FF;
+    background-color: #FFF;
+}
+form input[type="text"]:focus, form input[type="tel"]:focus, form textarea:focus{
     background-color: #ecf3ff;
 }
 input[name="nombre"]{
@@ -363,6 +420,7 @@ input[type="submit"]{
 .sobre-mi{
     width: 550px;
     height: fit-content;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,27 +437,60 @@ input[type="submit"]{
     margin-top: 10px;
 }
 /* --------------- ESTILOS DE HTML CONTACTO ---------------*/
+.medios-contacto{
+    width: fit-content;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "fondo-facebook fondo-instagram fondo-whatsapp" "facebook instagram whatsapp";
+}
 .medios-contacto p{
-    font-size: 22px;
     margin: 20px 0;
 }
-.medios-contacto ul{
-    list-style: none;
-    
+.medios-contacto a{
+    text-decoration: underline #FFF;
 }
-.medios-contacto ul li{
-    margin: 20px 0;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: bold;
+.fondo-whatsapp, .fondo-facebook, .fondo-instagram{
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondo-whatsapp{
+    grid-area: fondo-whatsapp;
+    background-image: url(../images/whatsapp.jpg);
+}
+.fondo-instagram{
+    grid-area: fondo-instagram;
+    background-image: url(../images/instagram.jpg);
+}
+.fondo-facebook{
+    grid-area: fondo-facebook;
+    background-image: url(../images/facebook.png);
+}
+.whatsapp, .facebook, .instagram{
+    width: auto;
     display: flex;
-    align-items: center;
-    cursor: pointer;
+    justify-content: center;
+    padding: 20px 0px;
+    color: #FFF;
+    font-size: 26px;
+    font-weight: bold;
 }
-.medios-contacto ul li span{
-    margin-left: 30px;
+.whatsapp{
+    background-color: #00bb2d;
+    grid-area: whatsapp;
 }
-
+.facebook{
+    background-color: #3b5998;
+    grid-area: facebook;
+}
+.instagram{
+    background-color: #ff008f;
+    grid-area: instagram;
+}
 
 /*-------------------- MEDIA QUERIE --------------------*/
 @media screen and (max-width: 410px){
@@ -448,4 +539,16 @@ input[type="submit"]{
     .sobre-mi{
         width: 100%;
     }
+    /* HTML CONTACTO */
+    .medios-contacto{
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "fondo-facebook" "facebook" "fondo-instagram" "instagram" "fondo-whatsapp" "whatsapp";
+    }
+    .facebook-link, .instagram-link, .whatsapp-link{
+        margin-top: 10px;
+    }
+}
 }
