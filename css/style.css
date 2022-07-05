@@ -224,6 +224,7 @@ nav ul li a{
     text-decoration: underline;
 }
 .formas-de-pago p{
+    text-align: left;
     margin: 10px 0;
 }
 .separador-contenido{
@@ -551,4 +552,5 @@ input[type="submit"]{
     .facebook-link, .instagram-link, .whatsapp-link{
         margin-top: 10px;
     }
+}
 }
