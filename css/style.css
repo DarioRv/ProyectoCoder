@@ -22,6 +22,7 @@ h1{
     text-align: center;
     margin-top: 30px;
     font-size: 76px;
+    font-weight: bold;
     font-family: Dancing Script;
     color: #FFF;
     text-shadow: 2px  0px 0px #FF006E, 0px  2px 0px #FF006E, -2px  0px 0px #FF006E, 0px -2px 0px #FF006E;
@@ -29,16 +30,21 @@ h1{
 h2{
     text-align: center;
     font-size: 32px;
+    font-weight: bold;
     padding: 70px 0 25px 0;
+    margin: 0;
     color: var(--principal);
     text-decoration: underline;
 }
 h4{
     font-size: 26px;
+    font-weight: bold;
 }
 p{
     text-align: center;
     font-size: 24px;
+    margin: 0;
+    line-height: 28px;
 }
 /* MENU DE NAVEGACION */
 .menu-mobile{
@@ -46,11 +52,14 @@ p{
 }
 header{
     width: 100%;
+    background-color: #FF006E;
     position: sticky;
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
 }
 nav{
     background-color: #FF006E;
-    border-radius: 0 0 5px 5px;
+    margin: -8px;
 }
 nav ul{
     list-style: none;
@@ -58,6 +67,7 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 nav ul li{
     margin: 10px;
@@ -69,6 +79,11 @@ nav ul li:hover{
     text-decoration: underline;
 }
 nav ul li a{
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+}
+nav ul li a:hover{
     text-decoration: none;
     font-size: 36px;
     color: white;
@@ -115,6 +130,7 @@ nav ul li a{
         text-align: center;
     }
     nav ul li{
+        width: 100%;
         margin: 0;
         border-radius: 0%;
         border-top: 2px solid #FFF;
@@ -122,9 +138,6 @@ nav ul li a{
     .logo{
         display: none;
     }
-    /* .menu-mobile:hover + nav ul{
-        display: block;
-    } */
 }
 /* --------------- ESTILOS DE HTML INDEX ---------------*/
 /* LISTADO DE PRODUCTOS */
@@ -132,7 +145,6 @@ nav ul li a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     gap: 30px;
 }
 .lista-productos .producto{
@@ -238,21 +250,19 @@ nav ul li a{
     justify-content: space-between;
 }
 .detalle-envio{
-    /* width: 280px; */
     background-color: #64B96D;
+    border-radius: 5px;
+    color: #FFF;
+    display: flex;
+}
+.detalle-horarios{
+    background-color: #3A86FF;
     border-radius: 5px;
     color: #FFF;
     display: flex;
 }
 .detalle-envio .informacion, .detalle-horarios .informacion{
     width: 200px;
-}
-.detalle-horarios{
-    /* width: 280px; */
-    background-color: #3A86FF;
-    border-radius: 5px;
-    color: #FFF;
-    display: flex;
 }
 .envios img, .horarios img{
     width: 280px;
@@ -269,6 +279,7 @@ nav ul li a{
     padding: 20px;
 }
 .detalle-horarios .informacion p{
+    margin: 0;
     font-size: 24px;
 }
 /* FOOTER */
@@ -286,6 +297,9 @@ footer{
     width: 100px;
     margin: 30px 100px;
 }
+.box-footer ul{
+    padding: 0;
+}
 .box-footer ul li a{
     text-decoration: none;
     color: #FFF;
@@ -302,6 +316,7 @@ footer{
 }
 .box-footer h3{
     font-size: 26px;
+    font-weight: bold;
     margin-bottom: 20px;
     color: #64B96D;
 }
