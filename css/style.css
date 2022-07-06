@@ -43,6 +43,7 @@ h4{
 p{
     text-align: center;
     font-size: 24px;
+    font-weight: 500;
     margin: 0;
     line-height: 28px;
 }
@@ -282,6 +283,18 @@ nav ul li a:hover{
 .detalle-horarios .informacion p{
     margin: 0;
     font-size: 24px;
+}
+/* PREGUNTAS FRECUENTES */
+.accordion-button{
+    font-size: 22px;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    color: var(--secundario);
+}
+.accordion-button:not(.collapsed){
+    color: var(--secundario);
+    background-color: rgba(58, 134, 255, 0.1);
 }
 /* FOOTER */
 footer{
