@@ -26,6 +26,7 @@ h1{
     font-family: Dancing Script;
     color: #FFF;
     text-shadow: 2px  0px 0px #FF006E, 0px  2px 0px #FF006E, -2px  0px 0px #FF006E, 0px -2px 0px #FF006E;
+    user-select: none;
 }
 h2{
     text-align: center;
@@ -83,6 +84,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 36px;
     color: white;
+    user-select: none;
 }
 nav ul li a:hover{
     text-decoration: none;
@@ -296,6 +298,9 @@ nav ul li a:hover{
     color: var(--secundario);
     background-color: rgba(58, 134, 255, 0.1);
 }
+.accordion-body{
+    font-size: 18px;
+}
 /* FOOTER */
 footer{
     width: 100%;
@@ -368,10 +373,17 @@ footer{
     margin-top: 30px;
     padding: 40px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .formulario-pedido h3{
     font-size: 22px;
-    margin-bottom: 20px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--secundario);
 }
 .formulario-pedido form input[type="text"], form input[type="tel"]{
     padding: 10px;
