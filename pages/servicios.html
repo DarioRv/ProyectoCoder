@@ -36,14 +36,22 @@
                 <br>con todo detalle tus preferencias.
             </p>
             <h3>Llena el siguiente formulario</h3>
-            <form action="" method="GET" enctype="application/x-www-form-urlencoded">
-                <input type="text" name="nombre" placeholder="Nombre *" autocomplete="off" required>
-                <input type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Telefono *" autocomplete="off" required>
-                <input type="text" name="direccion" placeholder="Dirección *" autocomplete="off" required>
-                <input type="text" name="presupuesto" maxlength="6" placeholder="Presupuesto (opcional)" autocomplete="off">
-                <textarea name="descripcion" maxlength="255" placeholder="Describenos tu orden personalizada y nos pondremos en contacto contigo en la brevedad." required></textarea>
-                <input type="reset" value="LIMPIAR">
-                <input type="submit" value="ENVIAR">
+            <form class="container-fluid" action="" method="GET" enctype="application/x-www-form-urlencoded">
+                <div class="row justify-content-center">
+                    <input class="col-md-6 m-1" type="text" name="nombre" placeholder="Nombre *" autocomplete="off" required>
+                    <input class="col-md-6 m-1" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Telefono *" autocomplete="off" required>
+                </div>
+                <div class="row justify-content-center">
+                    <input class="col-md-6 m-1" type="text" name="direccion" placeholder="Dirección *" autocomplete="off" required>
+                    <input class="col-md-6 m-1" type="text" name="presupuesto" maxlength="6" placeholder="Presupuesto (opcional)" autocomplete="off">
+                </div>
+                <div class="row justify-content-center">
+                    <textarea class="col-md-12 m-1" name="descripcion" maxlength="255" placeholder="Describenos tu orden personalizada y nos pondremos en contacto contigo en la brevedad." required></textarea>
+                </div>
+                <div class="row justify-content-center">
+                    <input class="col-md-6 m-1" type="reset" value="LIMPIAR">
+                    <input class="col-md-6 m-1" type="submit" value="ENVIAR">
+                </div>
             </form>
         </div>
     </main>

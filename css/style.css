@@ -164,6 +164,7 @@ nav ul li a:hover{
     width: 360px;
     height: 220px;
     border-radius: 5px 5px 0 0;
+    overflow: hidden;
 }
 .producto .detalles-producto{
     display: flex;
@@ -225,9 +226,9 @@ nav ul li a:hover{
     /*background-color: #F2F2F2;*/
     background-image: url(../images/background-pastel-2.png);
     padding: 40px;
-    display: grid;
+    /*display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto;*/
 }
 .formas-de-pago img{
     width: 240px;
@@ -346,6 +347,14 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+.col{
+    margin: 10px;
+    flex: none;
+}
+.row > *{
+    padding: 0;
 }
 .cargar-mas{
     font-family: 'Raleway', sans-serif, Verdana;
@@ -386,6 +395,8 @@ footer{
     color: var(--secundario);
 }
 .formulario-pedido form input[type="text"], form input[type="tel"]{
+    width: 300px;
+    height: 40px;
     padding: 10px;
     font-family: 'Raleway', sans-serif, Verdana;
     font-size: 18px;
@@ -394,6 +405,8 @@ footer{
     border: 2px solid #3A86FF;
 }
 .formulario-pedido form textarea{
+    width: 610px;
+    height: 500px;
     padding: 10px;
     font-family: 'Raleway', sans-serif, Verdana;
     font-size: 18px;
@@ -402,6 +415,8 @@ footer{
     border: 2px solid #3A86FF;
 }
 .formulario-pedido form input[type="submit"], form input[type="reset"]{
+    width: 300px;
+    height: 40px;
     font-family: 'Raleway', sans-serif, Verdana;
     font-size: 18px;
     font-weight: bold;
@@ -420,7 +435,7 @@ footer{
 form input[type="text"]:focus, form input[type="tel"]:focus, form textarea:focus{
     background-color: #ecf3ff;
 }
-input[name="nombre"]{
+/*input[name="nombre"]{
     grid-area: nombre;
 }
 input[name="telefono"]{
@@ -449,7 +464,7 @@ input[type="submit"]{
     grid-template-areas: "nombre telefono" "direccion presupuesto" "descripcion descripcion" "reset submit";
     column-gap: 10px;
     row-gap: 10px;
-}
+}*/
 /* --------------- ESTILOS DE HTML SOBRE MI ---------------*/
 .avatar{
     width: 150px;
@@ -462,7 +477,6 @@ input[type="submit"]{
 .sobre-mi{
     width: 550px;
     height: fit-content;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,14 +493,14 @@ input[type="submit"]{
     margin-top: 10px;
 }
 /* --------------- ESTILOS DE HTML CONTACTO ---------------*/
-.medios-contacto{
+/*.medios-contacto{
     width: fit-content;
     margin: 20px auto;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "fondo-facebook fondo-instagram fondo-whatsapp" "facebook instagram whatsapp";
-}
+}*/
 .medios-contacto p{
     margin: 20px 0;
 }
