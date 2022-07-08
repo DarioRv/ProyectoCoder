@@ -144,12 +144,12 @@ nav ul li a:hover{
 }
 /* --------------- ESTILOS DE HTML INDEX ---------------*/
 /* LISTADO DE PRODUCTOS */
-.lista-productos{
+/*.lista-productos{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-}
+}*/
 .lista-productos .producto{
     width: 360px;
     /*margin: 0px 40px 0 0;*/
