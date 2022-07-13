@@ -233,8 +233,6 @@ nav ul li a:hover{
 }
 .sin-stock{
     background-color: #7e7e7e !important;
-}
-a > .sin-stock{
     pointer-events: none;
     cursor: default;
 }
