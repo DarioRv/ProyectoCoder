@@ -10,10 +10,14 @@
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Iconos -->
     <link href='https://css.gg/menu.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg">
+    <!-- CABEZERA/MENU -->
+    <header class="navbar navbar-expand-lg" id="top">
         <div class="menu-mobile navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><a href="#menu">Menu</a> <i class="gg-menu"></i></div>
         <nav class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav col-md-12">
@@ -27,7 +31,9 @@
         </nav>
     </header>
     <main>
+        <div class="top-up d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
         <div class="titulo1"><h1>¡Bienvenido!</h1></div>
+        <!-- SERVICIOS/FORMULARIO -->
         <div class="titulo2"><h2>¡Adquiere Nuestros Servicios!</h2></div>
         <div class="formulario-pedido">
             <p>¿Deseas hacer un pedido mas perzonalida y que se adapte a tus gustos?</p>
@@ -55,23 +61,26 @@
             </form>
         </div>
     </main>
+    <!-- PIE DE PAGINA -->
     <footer>
         <div class="box-footer">
             <h3>Menu</h3>
             <ul>
-                <li><a href="../index.html">Incio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="sobre-mi.html">Sobre Mi</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><i class="bi bi-house-door"></i><a href="../index.html">Incio</a></li>
+                <li><i class="bi bi-bag-heart"></i><a href="productos.html">Productos</a></li>
+                <li><i class="fas fa-handshake"></i><a href="servicios.html">Servicios</a></li>
+                <li><i class="bi bi-file-person"></i><a href="sobre-mi.html">Sobre Mi</a></li>
+                <li><i class="bi bi-telephone-fill"></i><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
         <div class="box-footer">
             <h3>Contacto</h3>
             <ul>
-                <li>WhatsApp</li>
-                <li>Email</li>
-                <li>Telefono</li>
+                <li><i class="bi bi-whatsapp"></i><a href="#whatsapp">WhatsApp</a></li>
+                <li><i class="bi bi-facebook"></i><a href="#facebook">Facebook</a></li>
+                <li><i class="bi bi-instagram"></i><a href="#instagra">Instagram</a></li>
+                <li><i class="bi bi-envelope"></i><a href="#email">Email</a></li>
+                <li><i class="bi bi-telephone-fill"></i><a href="#telefono">Telefono</a></li>
             </ul>
         </div>
         <div class="box-footer">
@@ -79,11 +88,12 @@
             <ul>
                 <li>Mañana: 08:00 a 12:30</li>
                 <li>Tarde: 14:00 a 21:00</li>
-                <li>Direccion: </li>
+                <li><i class="fa-solid fa-location-dot"></i>Direccion: </li>
             </ul>
         </div>
     </footer>
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/15af1132eb.js" crossorigin="anonymous"></script>
 </body>
 </html>

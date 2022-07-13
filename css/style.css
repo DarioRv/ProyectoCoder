@@ -17,6 +17,22 @@ main{
     width: 95%;
     margin: 0 auto;
 }
+.top-up{
+    width: 50px;
+    height: 50px;
+    background-color: var(--principal);
+    font-size: 36px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 5;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.top-up a{
+    color: #FFF;
+}
 /* TITULOS */
 h1{
     text-align: center;
@@ -25,7 +41,7 @@ h1{
     font-weight: bold;
     font-family: Dancing Script;
     color: #FFF;
-    text-shadow: 2px  0px 0px #FF006E, 0px  2px 0px #FF006E, -2px  0px 0px #FF006E, 0px -2px 0px #FF006E;
+    text-shadow: 2px  0px 0px var(--principal), 0px  2px 0px var(--principal), -2px  0px 0px var(--principal), 0px -2px 0px var(--principal);
     user-select: none;
 }
 h2{
@@ -54,13 +70,13 @@ p{
 }
 header{
     width: 100%;
-    background-color: #FF006E;
+    background-color: var(--principal);
     position: sticky;
     overflow: hidden;
     border-radius: 0 0 5px 5px;
 }
 nav{
-    background-color: #FF006E;
+    background-color: var(--principal);
     margin: -8px;
 }
 nav ul{
@@ -99,7 +115,7 @@ nav ul li a:hover{
     height: 70px;
     border-radius: 50%;
 }
-@media screen and (max-width: 410px){
+@media screen and (max-width: 576px){
     h2{
         text-align: center;
     }
@@ -118,7 +134,7 @@ nav ul li a:hover{
         justify-content: space-between;
         align-items: center;
         padding: 5px 50px 5px 50px;
-        background-color: #FF006E;
+        background-color: var(--principal);
     }
     .menu-mobile a{
         list-style: none;
@@ -126,7 +142,7 @@ nav ul li a:hover{
         color: #FFF;
     }
     nav{
-        background-color: #FF006E;
+        background-color: var(--principal);
     }
     nav ul{
         display: block;
@@ -144,12 +160,6 @@ nav ul li a:hover{
 }
 /* --------------- ESTILOS DE HTML INDEX ---------------*/
 /* LISTADO DE PRODUCTOS */
-/*.lista-productos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-}*/
 .lista-productos .producto{
     width: 360px;
     /*margin: 0px 40px 0 0;*/
@@ -187,16 +197,18 @@ nav ul li a:hover{
 }
 .producto .detalles-producto .btn-pedir{
     width: auto;
+    height: 54px;
     padding: 15px 8px;
     margin-top: 20px;
     border-radius: 0 0 5px 5px;
-    background-color: #FF006E;
+    background-color: var(--principal);
     color: #FFF;
     transition: .3s ease all;
 }
 .producto .detalles-producto .btn-pedir:hover{
     background-color: #F04589;
     font-size: 18px;
+    /*transform: scale(1.1);*/
 }
 .producto .detalles-producto a{
     width: 100%;
@@ -207,18 +219,25 @@ nav ul li a:hover{
     padding: 15px;
     border-radius: 5px;
     text-align: center;
-    background-color: #FF006E;
+    background-color: var(--principal);
     transition: .3s ease all;
 }
 .lista-productos .redireccionamiento:hover{
     transform: translateX(25px);
 }
 .lista-productos a{
+    width: fit-content;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
+.sin-stock{
+    background-color: #7e7e7e !important;
+}
+a > .sin-stock{
+    pointer-events: none;
+    cursor: default;
+}
 /* FORMAS DE PAGO */
 .formas-de-pago{
     width: 100%;
@@ -226,9 +245,9 @@ nav ul li a:hover{
     /*background-color: #F2F2F2;*/
     background-image: url(../images/background-pastel-2.png);
     padding: 40px;
-    /*display: grid;
+    display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto;*/
+    grid-template-rows: auto;
 }
 .formas-de-pago img{
     width: 240px;
@@ -236,7 +255,7 @@ nav ul li a:hover{
 }
 .formas-de-pago h4{
     margin-bottom: 20px;
-    color: #3A86FF;
+    color: var(--secundario);
     text-decoration: underline;
 }
 .formas-de-pago p{
@@ -245,7 +264,7 @@ nav ul li a:hover{
 }
 .separador-contenido{
     width: 2px;
-    background-color: #3A86FF;
+    background-color: var(--secundario);
     margin: 0 20px
 }
 /* INFORMACIÓN COMPLEMENTARIA */
@@ -261,7 +280,7 @@ nav ul li a:hover{
     display: flex;
 }
 .detalle-horarios{
-    background-color: #3A86FF;
+    background-color: var(--secundario);
     border-radius: 5px;
     color: #FFF;
     display: flex;
@@ -314,8 +333,8 @@ footer{
     justify-content: space-between;
 }
 .box-footer{
-    width: 100px;
-    margin: 30px 100px;
+    width: 200px;
+    margin: 30px auto;
 }
 .box-footer ul{
     padding: 0;
@@ -328,6 +347,9 @@ footer{
     text-decoration: underline;
 }
 .box-footer ul li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
     list-style: none;
     padding: 5px 0;
     font-size: 16px;
@@ -366,7 +388,7 @@ footer{
     width: 150px;
     height: 50px;
     margin: 20px 0;
-    background-color: #FF006E;
+    background-color: var(--principal);
     transition: .3s ease all;
 }
 .cargar-mas:hover{
@@ -402,7 +424,7 @@ footer{
     font-size: 18px;
     font-style: italic;
     outline: none;
-    border: 2px solid #3A86FF;
+    border: 2px solid var(--secundario);
 }
 .formulario-pedido form textarea{
     width: 610px;
@@ -412,7 +434,7 @@ footer{
     font-size: 18px;
     font-style: italic;
     outline: none;
-    border: 2px solid #3A86FF;
+    border: 2px solid var(--secundario);
 }
 .formulario-pedido form input[type="submit"], form input[type="reset"]{
     width: 300px;
@@ -422,49 +444,22 @@ footer{
     font-weight: bold;
     outline: none;
     border: none;
-    background-color: #3A86FF;
+    background-color: var(--secundario);
     color: #FFF;
     cursor: pointer;
     transition: .1s ease all;
 }
 .formulario-pedido form input[type="submit"]:hover, form input[type="reset"]:hover{
-    border: 2px solid #3A86FF;
-    color: #3A86FF;
+    border: 2px solid var(--secundario);
+    color: var(--secundario);
     background-color: #FFF;
 }
 form input[type="text"]:focus, form input[type="tel"]:focus, form textarea:focus{
     background-color: #ecf3ff;
 }
-/*input[name="nombre"]{
-    grid-area: nombre;
-}
-input[name="telefono"]{
-    grid-area: telefono;
-}
-input[name="direccion"]{
-    grid-area: direccion;
-}
-input[name="presupuesto"]{
-    grid-area: presupuesto;
-}
 textarea[name="descripcion"]{
-    grid-area: descripcion;
     resize: none;
 }
-input[type="reset"]{
-    grid-area: reset;
-}
-input[type="submit"]{
-    grid-area: submit;
-}
-.formulario-pedido form{
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 40px 40px 400px 40px;
-    grid-template-areas: "nombre telefono" "direccion presupuesto" "descripcion descripcion" "reset submit";
-    column-gap: 10px;
-    row-gap: 10px;
-}*/
 /* --------------- ESTILOS DE HTML SOBRE MI ---------------*/
 .avatar{
     width: 150px;
@@ -493,14 +488,6 @@ input[type="submit"]{
     margin-top: 10px;
 }
 /* --------------- ESTILOS DE HTML CONTACTO ---------------*/
-/*.medios-contacto{
-    width: fit-content;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "fondo-facebook fondo-instagram fondo-whatsapp" "facebook instagram whatsapp";
-}*/
 .medios-contacto p{
     margin: 20px 0;
 }
@@ -549,7 +536,7 @@ input[type="submit"]{
 }
 
 /*-------------------- MEDIA QUERIE --------------------*/
-@media screen and (max-width: 410px){
+@media screen and (max-width: 576px){
     /* HTML INDEX*/
     .lista-productos{
         display: grid;
@@ -582,6 +569,9 @@ input[type="submit"]{
         justify-content: center;
         text-align: center;
     }
+    .box-footer ul li{
+        justify-content: center;
+    }
     /* HTML SERVICIOS */
     .formulario-pedido{
         width: 100%;
@@ -595,15 +585,11 @@ input[type="submit"]{
     .sobre-mi{
         width: 100%;
     }
+    .sobre-mi .informacion-personal{
+        padding: 40px;
+    }
     /* HTML CONTACTO */
     .medios-contacto{
-        margin: 20px auto;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "fondo-facebook" "facebook" "fondo-instagram" "instagram" "fondo-whatsapp" "whatsapp";
-    }
-    .facebook-link, .instagram-link, .whatsapp-link{
-        margin-top: 10px;
+        margin: 0 auto;
     }
 }
