@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200&family=Josefin+Sans:wght@290&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200&family=Josefin+Sans:wght@290&family=Pacifico&family=Raleway:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", sans-serif, Verdana;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background-pastel.png);
 }
 
 main {
@@ -16,7 +16,7 @@ main {
   margin: 0 auto;
 }
 
-.top-up {
+.top {
   width: 50px;
   height: 50px;
   background-color: #FF006E;
@@ -29,22 +29,21 @@ main {
   cursor: pointer;
   user-select: none;
 }
-.top-up a {
+.top a {
   color: #FFF;
 }
 
 /* TITULOS */
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 76px;
-  font-weight: bold;
-  font-family: Dancing Script;
-  color: #FFF;
-  text-shadow: 2px 0px 0px #FF006E, 0px 2px 0px #FF006E, -2px 0px 0px #FF006E, 0px -2px 0px #FF006E;
-  user-select: none;
-}
-
+/*h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 76px;
+    font-weight: bold;
+    font-family: Dancing Script;
+    color: #FFF;
+    text-shadow: 2px  0px 0px $colorPrimario, 0px  2px 0px $colorPrimario, -2px  0px 0px $colorPrimario, 0px -2px 0px $colorPrimario;
+    user-select: none;
+}*/
 h2 {
   text-align: center;
   font-size: 32px;
@@ -64,7 +63,6 @@ p {
   text-align: center;
   font-size: 24px;
   font-weight: 500;
-  margin: 0;
   line-height: 28px;
 }
 
@@ -74,53 +72,60 @@ p {
 }
 
 header {
-  width: 100%;
   background-color: #FF006E;
-  position: sticky;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 0 0 5px 5px;
 }
-header nav {
-  background-color: #FF006E;
-  margin: -8px;
+header .logo {
+  color: #FFF;
+  font-size: 26px;
+  user-select: none;
+}
+header .logo span {
+  font-family: Pacifico;
+  font-size: 36px;
 }
 header nav ul {
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  list-style: none;
 }
 header nav ul li {
+  color: #FFF;
+  font-size: 26px;
   margin: 10px;
-  padding: 0 15px;
-  transition: 0.3s ease all;
-}
-header nav ul li:hover {
-  transform: scale(1.05);
-  text-decoration: underline;
 }
 header nav ul li a {
+  color: #FFF;
   text-decoration: none;
-  font-size: 26px;
-  color: white;
 }
 header nav ul li a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+header .redes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+}
+header .redes ul li {
+  color: #FFF;
+  font-size: 26px;
+}
+header .redes ul li a {
+  color: #FFF;
   text-decoration: none;
-  color: white;
-}
-header nav ul .logo {
-  background-color: unset;
-}
-header nav ul .logo img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
 }
 
 /* MENU MOBILE*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   h2 {
     text-align: center;
   }
@@ -146,29 +151,90 @@ header nav ul .logo img {
     text-decoration: none;
     color: #FFF;
   }
-  nav {
+  header .logo, header .redes {
+    display: none;
+  }
+  header nav {
     background-color: #FF006E;
   }
-  nav ul {
+  header nav ul {
     display: block;
     text-align: center;
   }
-  nav ul li {
+  header nav ul li {
+    padding: 10px;
     width: 100%;
     margin: 0;
     border-radius: 0%;
     border-top: 2px solid #FFF;
   }
-  nav ul .logo {
+  header nav ul .logo {
     display: none;
   }
 }
 /* --------------- ESTILOS DE HTML INDEX ---------------*/
+/* BIENVENIDA */
+.inicio {
+  background-image: url(../images/pastel.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+}
+.inicio .bienvenida h1 {
+  font-family: Dancing Script;
+  font-size: 76px;
+  text-align: center;
+  color: #FFF;
+}
+.inicio .bienvenida h1 span {
+  font-family: Pacifico;
+  font-size: 96px;
+}
+.inicio .descripcion {
+  margin: 20px;
+}
+.inicio .descripcion p {
+  font-family: Dancing Script;
+  font-size: 32px;
+  text-align: center;
+  color: #FFF;
+}
+.inicio .btn-ver-productos {
+  background-color: transparent;
+  padding: 10px;
+  margin-top: 50px;
+  border: solid 2px #FFF;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.inicio .btn-ver-productos a {
+  text-decoration: none;
+  color: #FFF;
+}
+.inicio .btn-ver-productos:hover {
+  background-color: #FF006E;
+}
+
 /* LISTADO DE PRODUCTOS */
 .row > * {
   padding: 0;
 }
 
+.lista-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 .lista-productos .producto {
   width: 360px;
   border-radius: 5px;
@@ -203,22 +269,20 @@ header nav ul .logo img {
   font-size: 32px;
 }
 .lista-productos .producto .detalles-producto .btn-pedir {
-  width: auto;
+  width: 100%;
   height: 54px;
   padding: 15px 8px;
   margin-top: 20px;
   border-radius: 0 0 5px 5px;
   background-color: #FF006E;
   color: #FFF;
-  transition: 0.3s ease all;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s ease all;
 }
 .lista-productos .producto .detalles-producto .btn-pedir:hover {
   background-color: #F04589;
   font-size: 18px;
-}
-.lista-productos .producto .detalles-producto a {
-  width: 100%;
-  text-decoration: none;
 }
 .lista-productos .producto .detalles-producto .sin-stock {
   background-color: #7e7e7e !important;
@@ -331,8 +395,11 @@ header nav ul .logo img {
 }
 .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: #dc725f;
+  background-color: rgb(255, 0, 110);
   box-shadow: none;
+}
+.accordion-button:not(.colapse)::after {
+  background-image: url(../images/arrow.png);
 }
 
 .accordion-body {
@@ -382,6 +449,54 @@ footer .box-footer h3 {
 }
 
 /* --------------- ESTILOS DE HTML PRODUCTOS ---------------*/
+.mostrador {
+  width: 100%;
+  height: fit-content;
+  background-image: url(../images/background-pastel-3.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+}
+.mostrador h1 {
+  font-size: 76px;
+  font-family: Pacifico;
+  color: #FFF;
+  text-align: center;
+}
+.mostrador .carousel {
+  width: 60%;
+  border: 3px solid #FFF;
+  border-radius: 10px;
+}
+.mostrador .carousel .carousel-inner .carousel-item img {
+  width: 60%;
+  height: 50vh;
+  border-radius: 10px;
+}
+.mostrador .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-family: Pacifico;
+  font-size: 76px;
+  text-shadow: 2px 0px 0px #FF006E, 0px 2px 0px #FF006E, -2px 0px 0px #FF006E, 0px -2px 0px #FF006E;
+}
+.mostrador .btn-desplazar {
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px #FFF;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.mostrador .btn-desplazar a {
+  text-decoration: none;
+  color: #FFF;
+}
+.mostrador .btn-desplazar:hover {
+  background-color: #FF006E;
+}
+
 .cartelera {
   display: flex;
   flex-direction: column;
@@ -415,6 +530,52 @@ footer .box-footer h3 {
   background-color: #F04589;
 }
 
+.modal .modal-dialog .modal-content .modal-header h5 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago .metodo-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago .metodo-header h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago .metodo-header img {
+  width: auto;
+  height: 25px;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago p {
+  font-size: 18px;
+  text-align: left;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago a {
+  color: #FFF;
+  text-decoration: none;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago a .btn-pedir {
+  width: fit-content;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #FF006E;
+  transition: 0.3s ease all;
+}
+.modal .modal-dialog .modal-content .modal-body .metodo-pago a .btn-pedir:hover {
+  background-color: #F04589;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn-primary {
+  background-color: #FF006E;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.5);
+}
+
 /* --------------- ESTILOS DE HTML SERVICIOS ---------------*/
 .formulario-pedido {
   background-image: url(../images/background-pastel-2.png);
@@ -436,7 +597,7 @@ footer .box-footer h3 {
   color: #3A86FF;
 }
 .formulario-pedido form input[type=text], .formulario-pedido form input[type=tel] {
-  width: 300px;
+  width: 500px;
   height: 40px;
   padding: 10px;
   font-family: "Raleway", sans-serif, Verdana;
@@ -449,7 +610,7 @@ footer .box-footer h3 {
   background-color: #ecf3ff;
 }
 .formulario-pedido form input[type=submit], .formulario-pedido form input[type=reset] {
-  width: 300px;
+  width: 250px;
   height: 40px;
   font-family: "Raleway", sans-serif, Verdana;
   font-size: 18px;
@@ -467,8 +628,8 @@ footer .box-footer h3 {
   background-color: #FFF;
 }
 .formulario-pedido form textarea[name=descripcion] {
-  width: 610px;
-  height: 500px;
+  width: 500px;
+  height: 300px;
   padding: 10px;
   font-family: "Raleway", sans-serif, Verdana;
   font-size: 18px;
@@ -555,4 +716,205 @@ footer .box-footer h3 {
 .medios-contacto .instagram {
   background-color: #ff008f;
   grid-area: instagram;
+}
+
+.contactos {
+  /*.red-facebook, .red-instagram, .red-whatsapp{
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      overflow: hidden;
+      .logo{
+          z-index: 1;
+      }
+      .arroba{
+          background-color: #0060D4;
+          border-radius: 25px;
+          transform: translateX(-50px);
+          transition: .3s ease all;
+          height: 30px;
+          a{ 
+              display: none;
+              color: #fff;
+              padding: 15px 0;
+          }
+      }
+      &:hover{
+          .arroba{
+              padding: 0px 20px 0px 40px;
+              transform: translateX(-25px);
+              a{
+                  display: inline;
+                  font-size: 18px;
+              }
+          }
+      }
+  }*/
+}
+.contactos .red-whatsapp {
+  display: flex;
+  margin: 20px;
+  width: fit-content;
+  align-items: center;
+  overflow: hidden;
+}
+.contactos .red-whatsapp .logo {
+  z-index: 1;
+}
+.contactos .red-whatsapp .arroba {
+  background-color: #00bb2d;
+  border-radius: 25px;
+  transform: translateX(-50px);
+  transition: 0.3s ease all;
+  height: 30px;
+}
+.contactos .red-whatsapp .arroba a {
+  font-size: 9px;
+  color: #fff;
+  padding: 15px 0;
+}
+.contactos .red-whatsapp:hover .arroba {
+  padding: 0px 20px 0px 40px;
+  transform: translateX(-25px);
+}
+.contactos .red-whatsapp:hover .arroba a {
+  display: inline;
+  font-size: 18px;
+}
+.contactos .red-facebook {
+  display: flex;
+  margin: 20px;
+  width: fit-content;
+  align-items: center;
+  overflow: hidden;
+}
+.contactos .red-facebook .logo {
+  z-index: 1;
+}
+.contactos .red-facebook .arroba {
+  background-color: #0060D4;
+  border-radius: 25px;
+  transform: translateX(-50px);
+  transition: 0.3s ease all;
+  height: 30px;
+}
+.contactos .red-facebook .arroba a {
+  font-size: 9px;
+  color: #fff;
+  padding: 15px 0;
+}
+.contactos .red-facebook:hover .arroba {
+  padding: 0px 20px 0px 40px;
+  transform: translateX(-25px);
+}
+.contactos .red-facebook:hover .arroba a {
+  display: inline;
+  font-size: 18px;
+}
+.contactos .red-instagram {
+  display: flex;
+  margin: 20px;
+  width: fit-content;
+  align-items: center;
+  overflow: hidden;
+}
+.contactos .red-instagram .logo {
+  z-index: 1;
+}
+.contactos .red-instagram .arroba {
+  background-color: #ff008f;
+  border-radius: 25px;
+  transform: translateX(-50px);
+  transition: 0.3s ease all;
+  height: 30px;
+}
+.contactos .red-instagram .arroba a {
+  font-size: 9px;
+  color: #fff;
+  padding: 15px 0;
+}
+.contactos .red-instagram:hover .arroba {
+  padding: 0px 20px 0px 40px;
+  transform: translateX(-25px);
+}
+.contactos .red-instagram:hover .arroba a {
+  display: inline;
+  font-size: 18px;
+}
+
+/*-------------------- MEDIA QUERIE --------------------*/
+@media screen and (max-width: 992px) {
+  .lista-productos {
+    flex-direction: column;
+  }
+  .informacion-complementaria {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .informacion-complementaria .envios .detalle-envio, .informacion-complementaria .envios .detalle-horarios, .informacion-complementaria .horarios .detalle-envio, .informacion-complementaria .horarios .detalle-horarios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 610px) {
+  .top {
+    bottom: 15px;
+    right: 15px;
+  }
+  .formas-de-pago {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+  .informacion-complementaria {
+    flex-direction: column;
+  }
+  .informacion-complementaria .envios .detalle-envio, .informacion-complementaria .envios .detalle-horarios, .informacion-complementaria .horarios .detalle-envio, .informacion-complementaria .horarios .detalle-horarios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .box-footer ul li {
+    justify-content: center;
+  }
+  /* HTML PRODUCTOS */
+  .mostrador {
+    height: 100vh;
+  }
+  .mostrador h1 {
+    font-size: 46px;
+  }
+  .mostrador .carousel {
+    width: 80%;
+  }
+  .mostrador .carousel .carousel-inner .carousel-item img {
+    height: 30vh;
+  }
+  /* HTML SERVICIOS */
+  .formulario-pedido {
+    width: 100%;
+  }
+  .formulario-pedido form {
+    grid-template-columns: auto;
+    grid-template-rows: 35px 35px 35px 35px 300px 35px 35px;
+    grid-template-areas: "nombre" "telefono" "direccion" "presupuesto" "descripcion" "submit" "reset";
+  }
+  /* HTML SOBRE MI */
+  .sobre-mi {
+    width: 100%;
+  }
+  .sobre-mi .informacion-personal {
+    padding: 40px;
+  }
+  /* HTML CONTACTO */
+  .medios-contacto {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */

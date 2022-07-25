@@ -7,6 +7,8 @@
     <title>Productos</title>
     <link rel="shortcut icon" href="../images/logo-3.jpg" type="image/x-icon">
     <meta name="description" content="E-Commerce, compra desde tu casa">
+    <!-- CSS Wow -->
+    <link rel="stylesheet" href="../animate-wow/animate.css">
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -16,25 +18,78 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><link href='https://css.gg/menu.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg" id="top">
+    <header class="navbar navbar-expand-lg px-5 py-3">
         <div class="menu-mobile navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><a href="#menu">Menu</a> <i class="gg-menu"></i></div>
+        <div class="logo"><span>Ideal</span></div>
         <nav class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav col-md-12">
-                <li class="logo"><a href="index.html"><img src="../images/logo-3.jpg" alt="Pasteleria"></a></li>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="sobre-mi.html">SOBRE MI</a></li>
+                <li><a href="comentarios.html">RESEÑAS</a></li>
+                <li><a href="sobre-mi.html">SOBREMI</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <div class="redes">
+            <ul>
+                <li><a href="#whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="#facebook"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#instagram"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
     </header>
+    <!-- Carrousel -->
+    <section class="mostrador">
+        <h1 class="animate__animated animate__fadeInDown">Compra todo eso que te gusta</h1>
+        <div id="carouselExampleCaptions" class="carousel slide animate__animated animate__fadeIn" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/tarta-lemon-pie.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lemon Pie</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/tarta-manzana.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tarta de Manzana</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/cupcakes-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cupcakes</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/masitas-dulces.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Masitas Dulces</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <button class="btn-desplazar animate__animated animate__fadeInUp"><a href="#cartelera">¡ORDENAR YA!</a></button>
+    </section>
     <main>
-        <div class="top-up d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
-        <div class="titulo1"><h1>¡Bienvenido!</h1></div>
+        <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
         <!-- CARTELERA DE PRODUCTOS -->
         <div class="titulo2"><h2>¡Mira los productos que tenemos para vos!</h2></div>
-        <section class="cartelera container-fluid">
+        <section class="cartelera container-fluid" id="cartelera">
             <section class="lista-productos row justify-content-center">
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -43,7 +98,7 @@
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Pastel de Duraznos</h4>
                         <span class="precio-producto">900$</span>
-                        <a href="#" target="_blank"><div class="btn-pedir">Proceder al pago</div></a>
+                        <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceder al pago</button>
                     </div>
                 </article>
                 <article class="producto col">
@@ -53,7 +108,7 @@
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta de Chocolate</h4>
                         <span class="precio-producto">650$</span>
-                        <a href="#" target="_blank"><div class="btn-pedir">Proceder al pago</div></a>
+                        <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceder al pago</button>
                     </div>
                 </article>
                 <article class="producto col">
@@ -63,7 +118,7 @@
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta de Frutilla</h4>
                         <span class="precio-producto">800$</span>
-                        <a href="#" target="_blank"><div class="btn-pedir">Proceder al pago</div></a>
+                        <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceder al pago</button>
                     </div>
                 </article>
                 <article class="producto col">
@@ -73,7 +128,7 @@
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta de Manzana</h4>
                         <span class="precio-producto">800$</span>
-                        <a href="#" target="_blank"><div class="btn-pedir">Proceder al pago</div></a>
+                        <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceder al pago</button>
                     </div>
                 </article>
                 <article class="producto col">
@@ -104,7 +159,7 @@
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Donas</h4>
                         <span class="precio-producto">200$</span>
-                        <a href="#" target="_blank"><div class="btn-pedir">Proceder al pago</div></a>
+                        <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Proceder al pago</button>
                     </div>
                 </article>
                 <article class="producto col">
@@ -135,12 +190,53 @@
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Cupcakes</h4>
                         <span class="precio-producto">500$</span>
-                        <a href="#" target="_blank"><div class="btn-pedir sin-stock">No disponible aún</div></a>
+                        <button class="btn-pedir sin-stock" data-bs-toggle="modal" data-bs-target="#exampleModal">No disponible aún</button>
                     </div>
                 </article>
             </section>
             <button class="cargar-mas">CARGAR MÁS</button>
         </section>
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Continuando con la compra</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="metodo-pago">
+                            <div class="metodo-header">
+                                <h4>Mercado Pago</h4>
+                                <img src="../images/mercadopago-2.png" alt="MercadoPago Logo">
+                            </div>
+                            <p>Podes pagar con tarjetas de debito, crédito o con saldo disponible en cuenta.</p>
+                            <img src="../images/mastercard.png" alt="" widht="100" height="20">
+                            <img src="../images/visa.png" alt="" widht="100" height="20">
+                            <img src="../images/naranja.png" alt="" widht="100" height="20">
+                            <a href="#" target="_blank"><div class="btn-pedir">Pagar con MercadoPago</div></a>
+                        </div>
+                        <hr>
+                        <div class="metodo-pago">
+                            <div class="metodo-header">
+                                <h4>Transferencia Bancaria</h4>
+                                <img src="http://institutoimep.edu.ar/wp-content/uploads/2022/03/TRANSFERENCIA-BANCARIA.png" alt="transferencia bancaria">
+                            </div>
+                            <p>Aboná tu pago por medio de transferencia bancaria.<br><i>*Deberás subir un comprobante de la transacción*</i></p>
+                            <a href="#" target="_blank"><div class="btn-pedir">Pagar con Transferencia</div></a>
+                        </div>
+                        <hr>
+                        <div class="metodo-pago">
+                            <div class="metodo-header">
+                                <h4>Pago en el momento</h4>
+                            </div>
+                            <p>¡Págas al momento en que tu pedido llegué a tu casa!</p>
+                            <a href="#" target="_blank"><div class="btn-pedir">Quiero pagar en el momento</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- PIE DE PAGINA -->
     <footer>
@@ -149,7 +245,7 @@
             <ul>
                 <li><i class="bi bi-house-door"></i><a href="../index.html">Incio</a></li>
                 <li><i class="bi bi-bag-heart"></i><a href="productos.html">Productos</a></li>
-                <li><i class="fas fa-handshake"></i><a href="servicios.html">Servicios</a></li>
+                <li><i class="bi bi-star-fill"></i><a href="comentarios.html">Reseñas</a></li>
                 <li><i class="bi bi-file-person"></i><a href="sobre-mi.html">Sobre Mi</a></li>
                 <li><i class="bi bi-telephone-fill"></i><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -175,6 +271,13 @@
     </footer>
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Wow js-->
+    <script src="../animate-wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Otros Js-->
     <script src="https://kit.fontawesome.com/15af1132eb.js" crossorigin="anonymous"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 </body>
 </html>
