@@ -252,8 +252,8 @@ header .redes ul li a {
 .lista-productos .producto .detalles-producto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 .lista-productos .producto .detalles-producto .nombre-producto {
   color: #FF006E;
@@ -342,32 +342,27 @@ header .redes ul li a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.informacion-complementaria .envios img {
+.informacion-complementaria .envios img, .informacion-complementaria .horarios img {
   width: 280px;
   height: 240px;
   border-radius: 5px 0 0 5px;
 }
-.informacion-complementaria .envios .detalle-envio {
+.informacion-complementaria .envios .detalle-envio, .informacion-complementaria .horarios .detalle-envio {
   background-color: #64B96D;
   border-radius: 5px;
   color: #FFF;
   display: flex;
 }
-.informacion-complementaria .envios .detalle-envio .informacion {
+.informacion-complementaria .envios .detalle-envio .informacion, .informacion-complementaria .horarios .detalle-envio .informacion {
   width: 200px;
   padding: 20px;
 }
-.informacion-complementaria .envios .detalle-envio .informacion h4 {
+.informacion-complementaria .envios .detalle-envio .informacion h4, .informacion-complementaria .horarios .detalle-envio .informacion h4 {
   text-align: center;
 }
-.informacion-complementaria .envios .detalle-envio .informacion p {
+.informacion-complementaria .envios .detalle-envio .informacion p, .informacion-complementaria .horarios .detalle-envio .informacion p {
   margin: 0;
   font-size: 24px;
-}
-.informacion-complementaria .horarios img {
-  width: 280px;
-  height: 240px;
-  border-radius: 5px 0 0 5px;
 }
 .informacion-complementaria .horarios .detalle-horarios {
   background-color: #3A86FF;
@@ -451,7 +446,7 @@ footer .box-footer h3 {
 /* --------------- ESTILOS DE HTML PRODUCTOS ---------------*/
 .mostrador {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   background-image: url(../images/background-pastel-3.png);
   display: flex;
   flex-direction: column;
@@ -462,7 +457,8 @@ footer .box-footer h3 {
 }
 .mostrador h1 {
   font-size: 76px;
-  font-family: Pacifico;
+  font-family: Dancing Script;
+  font-weight: bold;
   color: #FFF;
   text-align: center;
 }
@@ -478,13 +474,12 @@ footer .box-footer h3 {
 }
 .mostrador .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-family: Pacifico;
-  font-size: 76px;
+  font-size: 36px;
   text-shadow: 2px 0px 0px #FF006E, 0px 2px 0px #FF006E, -2px 0px 0px #FF006E, 0px -2px 0px #FF006E;
 }
 .mostrador .btn-desplazar {
   background-color: transparent;
   padding: 10px;
-  margin: 10px;
   border: solid 2px #FFF;
   border-radius: 5px;
   font-weight: bold;
@@ -495,6 +490,10 @@ footer .box-footer h3 {
 }
 .mostrador .btn-desplazar:hover {
   background-color: #FF006E;
+  border-color: #FFF;
+}
+.mostrador .btn-desplazar:hover a {
+  color: #FFF;
 }
 
 .cartelera {
@@ -576,7 +575,54 @@ footer .box-footer h3 {
   box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.5);
 }
 
-/* --------------- ESTILOS DE HTML SERVICIOS ---------------*/
+/* --------------- ESTILOS DE HTML RESEÑAS ---------------*/
+.introduccion-comentar {
+  background-image: url(https://www.oetker.es/Recipe/Recipes/oetker.es/es-es/gateaux/image-thumb__70333__RecipeDetailsLightBox/pastel-ovejita.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduccion-comentar .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduccion-comentar .contenido h1 {
+  font-family: Dancing Script;
+  font-size: 96px;
+  text-align: center;
+}
+.introduccion-comentar .contenido .stars {
+  font-size: 36px;
+}
+.introduccion-comentar .contenido p {
+  font-family: Pacifico;
+}
+.introduccion-comentar .contenido button {
+  background-color: transparent;
+  padding: 10px;
+  border: solid 2px #000;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.introduccion-comentar .contenido button a {
+  text-decoration: none;
+  color: #000;
+}
+.introduccion-comentar .contenido button:hover {
+  background-color: #FF006E;
+  border-color: #FFF;
+}
+.introduccion-comentar .contenido button:hover a {
+  color: #FFF;
+}
+
 .formulario-pedido {
   background-image: url(../images/background-pastel-2.png);
   width: fit-content;
@@ -643,6 +689,33 @@ footer .box-footer h3 {
 }
 
 /* --------------- ESTILOS DE HTML SOBRE MI ---------------*/
+.introduccion-sobre-mi {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://aptus.com.ar/wp-content/uploads/2022/04/person-baking-and-decorating-pumpkin-cake-in-kitchen-at-home_t20_P0jjlR-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduccion-sobre-mi h1 {
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 96px;
+  color: #FF006E;
+}
+.introduccion-sobre-mi p {
+  font-family: Pacifico;
+  font-size: 36px;
+  color: #FFF;
+  margin: 20px;
+}
+.introduccion-sobre-mi .parrafo-2 {
+  color: #000;
+}
+
 .sobre-mi {
   width: 550px;
   height: fit-content;
@@ -671,6 +744,30 @@ footer .box-footer h3 {
 }
 
 /* --------------- ESTILOS DE HTML CONTACTO ---------------*/
+.introduccion-contacto {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  padding-left: 50px;
+  background-image: url(https://st2.depositphotos.com/5052879/7494/i/600/depositphotos_74946771-stock-photo-bakery-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.introduccion-contacto h1 {
+  font-family: Dancing Script;
+  font-size: 96px;
+  color: #FFF;
+}
+.introduccion-contacto p {
+  font-family: Pacifico;
+  font-size: 36px;
+  color: #FFF;
+}
+
 .medios-contacto .row > * {
   padding: 0;
 }
@@ -700,6 +797,7 @@ footer .box-footer h3 {
   width: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px 0px;
   color: #FFF;
   font-size: 26px;
@@ -718,44 +816,11 @@ footer .box-footer h3 {
   grid-area: instagram;
 }
 
-.contactos {
-  /*.red-facebook, .red-instagram, .red-whatsapp{
-      display: flex;
-      width: fit-content;
-      align-items: center;
-      overflow: hidden;
-      .logo{
-          z-index: 1;
-      }
-      .arroba{
-          background-color: #0060D4;
-          border-radius: 25px;
-          transform: translateX(-50px);
-          transition: .3s ease all;
-          height: 30px;
-          a{ 
-              display: none;
-              color: #fff;
-              padding: 15px 0;
-          }
-      }
-      &:hover{
-          .arroba{
-              padding: 0px 20px 0px 40px;
-              transform: translateX(-25px);
-              a{
-                  display: inline;
-                  font-size: 18px;
-              }
-          }
-      }
-  }*/
-}
 .contactos .red-whatsapp {
   display: flex;
+  align-items: center;
   margin: 20px;
   width: fit-content;
-  align-items: center;
   overflow: hidden;
 }
 .contactos .red-whatsapp .logo {
@@ -783,9 +848,9 @@ footer .box-footer h3 {
 }
 .contactos .red-facebook {
   display: flex;
+  align-items: center;
   margin: 20px;
   width: fit-content;
-  align-items: center;
   overflow: hidden;
 }
 .contactos .red-facebook .logo {
@@ -813,9 +878,9 @@ footer .box-footer h3 {
 }
 .contactos .red-instagram {
   display: flex;
+  align-items: center;
   margin: 20px;
   width: fit-content;
-  align-items: center;
   overflow: hidden;
 }
 .contactos .red-instagram .logo {
