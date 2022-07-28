@@ -2,6 +2,37 @@ $colorPrimario: #FF006E;
 $colorSecundario: #3A86FF;
 $colorTerciario: #64B96D;
 $colorHover: #F04589;
-$facebook: #3b5998;
-$whatsapp: #00bb2d;
-$instagram: #ff008f;
+$color-facebook: #3b5998;
+$color-whatsapp: #00bb2d;
+$color-instagram: #ff008f;
+$redes:(whatsapp: $color-whatsapp, facebook: #0060D4, instagram: $color-instagram);
+@mixin flex-row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btn-desplazar($color, $colorHover){
+    background-color: transparent;
+    padding: 10px;
+    border: solid 2px $color;
+    border-radius: 5px;
+    font-weight: bold;
+    a{
+        text-decoration: none;
+        color: $color;
+    }
+    &:hover{
+        background-color: #FF006E;
+        border-color: $colorHover;
+        a{
+            color: $colorHover;
+        }
+        
+    }
+}
