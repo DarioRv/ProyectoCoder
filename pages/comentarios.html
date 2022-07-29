@@ -28,7 +28,7 @@
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="comentarios.html">RESEÑAS</a></li>
-                <li><a href="sobre-mi.html">SOBREMI</a></li>
+                <li><a href="sobre-mi.html">SOBRE MI</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
@@ -54,36 +54,94 @@
                 <p>Déjanos tus comentarios</p>
             </div>
             <div class="animate__animated animate__fadeInUp">
-                <button><a href="#">¡QUIERO VALORAR!</a></button>
+                <button><a href="#opinar">¡QUIERO VALORAR!</a></button>
             </div>
         </div>
     </div>
     <main>
         <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
-        <!-- SERVICIOS/FORMULARIO -->
-        <!--
-        <div class="titulo2"><h2>¡Calificanos!</h2></div>
-        <div class="formulario-pedido">
-            <p>¿Quieres hacernos saber la calidad de nuestra atencion y productos?</p>
-            <p>
-                <br>Puedes hacerlo rellenando el siguiente formulario donde podras indicar
-                <br>con todo detalle tu opinion.
-            </p>
-            <h3>Llena el siguiente formulario</h3>
-            <form class="container-fluid" action="" method="GET" enctype="application/x-www-form-urlencoded">
-                <div class="row justify-content-center">
-                    <input class="col-md-12 m-1" type="text" name="nombre" placeholder="Nombre" autocomplete="off" required>
+        <!-- RESEÑAS -->
+        <div class="titulo2"><h2>¡Lo que opinan de nosotros!</h2></div>
+        <section class="comentarios">
+            <article class="opinion">
+                <div class="nombre-usuario">
+                    <h5>Talia</h5>
                 </div>
-                <div class="row justify-content-center">
-                    <textarea class="col-md-12 m-1" name="descripcion" maxlength="255" placeholder="Escribe tu opinion." required></textarea>
+                <div class="opinion-usuario">
+                    <p>Todo correcto.</p>
                 </div>
-                <div class="row justify-content-center">
-                    <input class="col-md-6 m-1" type="reset" value="LIMPIAR">
-                    <input class="col-md-6 m-1" type="submit" value="ENVIAR">
+                <div class="fecha-opinion">
+                    <span>Hace 1 días</span>
                 </div>
+            </article>
+            <article class="opinion">
+                <div class="nombre-usuario">
+                    <h5>Raquel</h5>
+                </div>
+                <div class="opinion-usuario">
+                    <p>Muy lindas presentaciones y sabores ni hablar.</p>
+                </div>
+                <div class="fecha-opinion">
+                    <span>Hace 2 días</span>
+                </div>
+            </article>
+            <article class="opinion">
+                <div class="nombre-usuario">
+                    <h5>Daniel</h5>
+                </div>
+                <div class="opinion-usuario">
+                    <p>Los mejores alfajores que he probado, además de las tortas y galletas. Para destacar  el sabor de gran calidad y sobretodo que no les mezquinan los rellenos decorados el chocolate y tamaño que siempre son muy generosos para recontra llenarte y también guardar para después, gran labor de servicio para el paladar sigan así. Gracias</p>
+                </div>
+                <div class="fecha-opinion">
+                    <span>Hace 5 días</span>
+                </div>
+            </article>
+            <article class="opinion">
+                <div class="nombre-usuario">
+                    <h5>Rosana</h5>
+                </div>
+                <div class="opinion-usuario">
+                    <p>Excelente calidad y atención.. Todo super rico.. 100% recomendable..</p>
+                </div>
+                <div class="fecha-opinion">
+                    <span>Hace 1 semana</span>
+                </div>
+            </article>
+            <article class="opinion">
+                <div class="nombre-usuario">
+                    <h5>Viviana</h5>
+                </div>
+                <div class="opinion-usuario">
+                    <p>Recomendadisimo... vinimos a última hora porque estabamos de vacaciones y necesitábamos una torta de cumpleaños y con  toda la predisposición nos preparó una rápidamente y personalizada.</p>
+                </div>
+                <div class="fecha-opinion">
+                    <span>Hace 2 semanas</span>
+                </div>
+            </article>
+            <article class="opinion">
+                <div class="nombre-usuario">
+                    <h5>Rosana</h5>
+                </div>
+                <div class="opinion-usuario">
+                    <p>Vende unas tortas riquísimos. Muy  recomendable. Servicio de primera calidad.</p>
+                </div>
+                <div class="fecha-opinion">
+                    <span>Hace 1 mes</span>
+                </div>
+            </article>
+        </section>
+        <div class="titulo2"><h2>Añade tu opinión al resto</h2></div>
+        <section class="formulario-opinion" id="opinar">
+            <form action="#formularioenviado" method="post" enctype="application/x-www-form-urlencoded">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <textarea name="opinion" placeholder="Escribí aquí tu opinión..." required></textarea>
+                <div class="checkbox d-flex align-items-center gap-2">
+                    <input type="checkbox" name="check" id="check" required>
+                    <label for="check">Acepto los términos y condiciones</label>
+                </div>
+                <input type="submit" value="ENVIAR">
             </form>
-        </div>
-        -->
+        </section>
     </main>
     <!-- PIE DE PAGINA -->
     <footer>

@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="../images/logo-3.jpg" type="image/x-icon">
     <meta name="description" content="Descubre como inicio todo este emprendimiento, desde comienzo hasta el final y conocer un poco más de mí.">
     <meta name="keywords" content="pasteleria, sobre mi, historia">
+    <!-- CSS Wow -->
+    <link rel="stylesheet" href="../animate-wow/animate.css">
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -26,7 +28,7 @@
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="comentarios.html">RESEÑAS</a></li>
-                <li><a href="sobre-mi.html">SOBREMI</a></li>
+                <li><a href="sobre-mi.html">SOBRE MI</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
@@ -39,21 +41,21 @@
         </div>
     </header>
     <div class="introduccion-sobre-mi">
-        <h1>Sobre mi</h1>
-        <p>Conoce como inició todo</p>
-        <p class="parrafo-2">De hobbit a emprendimiento</p>
+        <h1 class="animate__animated animate__fadeIn">Sobre mi</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">Conoce como inició todo</p>
+        <p class="parrafo-2 animate__animated animate__fadeIn animate__delay-2s">De hobbit a emprendimiento</p>
     </div>
     <main>
         <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
         <!-- SOBRE MI -->
-        <div class="titulo2"><h2>Un Poco Sobre Mi Persona</h2></div>
+        <div class="titulo2"><h2>Un poco sobre como comenzó todo</h2></div>
         <section class="sobre-mi container-fluid">
             <div class="row justify-content-center">
-                <div class="avatar"></div>
+                <div class="avatar"><span>Ideal</span></div>
                 <div class="informacion-personal">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet perspiciatis quod itaque error sapiente ea repudiandae unde laboriosam reiciendis repellendus voluptatem fuga, eaque ipsum assumenda praesentium nobis. Ipsa, provident expedita!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate adipisci placeat voluptatibus doloribus magni quasi voluptatem tempora magnam distinctio. Excepturi soluta, quod facilis dignissimos in numquam ullam animi ut ad.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate adipisci placeat voluptatibus doloribus magni quasi voluptatem tempora magnam distinctio. Excepturi soluta, quod facilis dignissimos in numquam ullam animi ut ad.</p>
+                    <p>¡Hola! Me llamo Alejandra y si estás leyendo esto es porque tienes interés en como comenzó mi emprendimiento así que te cuento que esto inicio solo preparando todo tipo de dulces con mi familia o amigos. Me fue gustando mucho la pastelería que prácticamente era hacer algo dulce casi todos los días.</p>
+                    <p>Debido a todo eso, mis conocidos empezaron a pedirme pasteles, tartas y otras cosas más para sus cumpleaños, festejos o reuniones. Todos me felicitaban por los postres que les preparaba y me aconsejaron empezar a hacer encargos de este tipo, me anime y lo logre tengo varios clientes que quedan muy contentos con lo que hago.</p>
+                    <p>También agradecerlo a ustedes que hacen todo esto posible, <strong>MUCHAS GRACIAS.</strong></p>
                 </div>
             </div>
         </section>
@@ -91,6 +93,13 @@
     </footer>
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Wow js-->
+    <script src="../animate-wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Otros Js-->
     <script src="https://kit.fontawesome.com/15af1132eb.js" crossorigin="anonymous"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 </body>
 </html>

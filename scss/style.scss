@@ -560,6 +560,7 @@ footer{
     background-image: url(https://www.oetker.es/Recipe/Recipes/oetker.es/es-es/gateaux/image-thumb__70333__RecipeDetailsLightBox/pastel-ovejita.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
     @include flex-column-center;
@@ -581,65 +582,94 @@ footer{
         }
     }
 }
-.formulario-pedido{
-    background-image: url(../images/background-pastel-2.png);
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 40px;
-    border-radius: 5px;
+.comentarios{
+    width: 100%;
+    height: auto;
+    padding: 15px;
     @include flex-column-center;
-    h3{
-        font-size: 22px;
-        text-decoration: underline;
-        text-align: center;
-        margin: 20px 0;
-        color: $colorSecundario;
-    }
-    form{
-        input[type="text"], input[type="tel"]{
-            width: 500px;
-            height: 40px;
-            padding: 10px;
-            font-family: 'Raleway', sans-serif, Verdana;
-            font-size: 18px;
-            font-style: italic;
-            outline: none;
-            border: 2px solid $colorSecundario;
-            &:focus{
-                background-color: #ecf3ff;
+    .opinion{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        padding: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: #fff;
+        .nombre-usuario{
+            h5{
+                font-size: 24px;
             }
         }
-        input[type="submit"], input[type="reset"]{
-            width: 250px;
+        .opinion-usuario{
+            p{
+                font-size: 18px;
+                text-align: left;
+                color: #7e7e7e;
+            }
+        }
+        .fecha-opinion{
+            display: flex;
+            justify-content: end;
+        }
+        &:hover{
+            box-shadow: 0 7px 11px 0 rgb(0 0 0 / 10%), 0 2px 4px 0 rgb(0 0 0 / 10%);
+        }
+    }
+}
+.formulario-opinion{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(../images/background-pastel-2.png);
+    form{
+        @include flex-column-center;
+        align-items: start;
+        gap: 15px;
+        input[type="text"]{
+            width: 100%;
+            max-width: 300px;
             height: 40px;
-            font-family: 'Raleway', sans-serif, Verdana;
-            font-size: 18px;
-            font-weight: bold;
+            padding: 10px;
+            font-family: Raleway;
+            outline: none;
+            border: 2px $colorPrimario solid;
+            &:focus, &:hover{
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+        input[type="checkbox"]{
+            width: 20px;
+            height: 20px;
+            &:focus, &:hover{
+                border: 2px $colorPrimario solid;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+        input[type="submit"]{
+            width: 100px;
+            height: 40px;
+            background-color: $colorPrimario;
+            color: #FFF;
             outline: none;
             border: none;
-            background-color: $colorSecundario;
-            color: #FFF;
-            cursor: pointer;
-            transition: .1s ease all;
             &:hover{
-                border: 2px solid $colorSecundario;
-                color: $colorSecundario;
-                background-color: #FFF;
+                border: 2px $colorPrimario solid;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
             }
         }
-        textarea[name="descripcion"]{
-            width: 500px;
-            height: 300px;
+        textarea{
+            width: 100%;
+            max-width: 500px;
+            height: 200px;
             padding: 10px;
-            font-family: 'Raleway', sans-serif, Verdana;
-            font-size: 18px;
-            font-style: italic;
+            font-family: Raleway;
             outline: none;
-            border: 2px solid $colorSecundario;
             resize: none;
-            &:focus{
-                background-color: #ecf3ff;
+            border: 2px $colorPrimario solid;
+            &:focus, &:hover{
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
             }
         }
     }
@@ -651,6 +681,7 @@ footer{
     background-image: url(https://aptus.com.ar/wp-content/uploads/2022/04/person-baking-and-decorating-pumpkin-cake-in-kitchen-at-home_t20_P0jjlR-scaled.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     @include flex-column-center;
     h1{
         text-align: center;
@@ -669,16 +700,23 @@ footer{
     }
 }
 .sobre-mi{
-    width: 550px;
+    width: 80%;
     height: fit-content;
     @include flex-column-center;
     .avatar{
         width: 150px;
         height: 150px;
-        background-color: #5603AD; /* Luego cambiar por un background-image*/
+        background-color: $colorPrimario;
         border-radius: 50%;
         position: relative;
         bottom: -50px;
+        @include flex-column-center;
+        span{
+            color: #FFF;
+            font-size: 56px;
+            text-align: center;
+            font-family: Pacifico;
+        }
     }
     .informacion-personal{
         width: 100%;
@@ -711,87 +749,78 @@ footer{
         font-size: 36px;
         color: #FFF;
     }
-}
-.medios-contacto{
-    .row>*{
-        padding: 0;
-    }
-    p{
-        margin: 20px 0;
-    }
-    a{
-        text-decoration: underline #FFF;
-    }
-    .fondo-whatsapp, .fondo-facebook, .fondo-instagram{
-        width: 300px;
-        height: 100px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .fondo-whatsapp{
-        background-image: url(../images/whatsapp.jpg);
-    }
-    .fondo-instagram{
-        background-image: url(../images/instagram.jpg);
-    }
-    .fondo-facebook{
-        background-image: url(../images/facebook.png);
-    }
-    .whatsapp, .facebook, .instagram{
-        width: auto;
-        @include flex-row-center;
-        padding: 20px 0px;
-        color: #FFF;
-        font-size: 26px;
-        font-weight: bold;
-    }
-    .whatsapp{
-        background-color: $color-whatsapp;
-        grid-area: whatsapp;
-    }
-    .facebook{
-        background-color: $color-facebook;
-        grid-area: facebook;
-    }
-    .instagram{
-        background-color: $color-instagram;
-        grid-area: instagram;
-    }
-}
-.contactos{
-    @each $red, $color in $redes {
-        .red-#{$red}{
-            display: flex;
-            align-items: center;
-            margin: 20px;
-            width: fit-content;
-            overflow: hidden;
-            .logo{
-                z-index: 1;
-            }
-            .arroba{
-                background-color: #{$color};
-                border-radius: 25px;
-                transform: translateX(-50px);
-                transition: .3s ease all;
-                height: 30px;
-                a{ 
-                    font-size: 9px;
-                    color: #fff;
-                    padding: 15px 0;
+    .contactos{
+        @each $red, $color in $redes {
+            .red-#{$red}{
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                overflow: hidden;
+                .logo{
+                    z-index: 1;
                 }
-            }
-            &:hover{
                 .arroba{
-                    padding: 0px 20px 0px 40px;
-                    transform: translateX(-25px);
-                    a{
-                        display: inline;
-                        font-size: 18px;
+                    background-color: #{$color};
+                    border-radius: 25px;
+                    transform: translateX(-50px);
+                    transition: .3s ease all;
+                    height: 30px;
+                    a{ 
+                        font-size: 9px;
+                        color: #fff;
+                        padding: 15px 0;
+                    }
+                }
+                &:hover{
+                    .arroba{
+                        padding: 0px 20px 0px 40px;
+                        transform: translateX(-25px);
+                        a{
+                            display: inline;
+                            font-size: 18px;
+                        }
                     }
                 }
             }
+        }
+    }
+}
+.formulario-contacto{
+    width: fit-content;
+    margin: 0 auto;
+    background-image: url(../images/background-pastel-2.png);
+    padding: 20px;
+    border-radius: 5px;
+    @include flex-column-center;
+    form{
+        @include flex-column-center;
+        align-items: start;
+        label{
+            font-size: 24px;
+            span{
+                color: red;
+                font-size: 32px;
+            }
+        }
+        input, textarea{
+            width: 300px;
+            padding: 5px;
+            padding: 5px;
+            font-size: 18px;
+            outline: none;
+            &:focus, &:hover{
+                border: 2px $colorPrimario solid;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+        textarea{
+            resize: none;
+        }
+        input[type="submit"]{
+            background-color: $colorPrimario;
+            color: #FFF;
+            border-color: transparent;
+            margin: 20px 0;
         }
     }
 }
@@ -858,15 +887,13 @@ footer{
             }
         }
     }
-    /* HTML SERVICIOS */
-    .formulario-pedido{
-        width: 100%;
-    }
-    .formulario-pedido form{
-        grid-template-columns: auto;
-        grid-template-rows: 35px 35px 35px 35px 300px 35px 35px;
-        grid-template-areas: "nombre" "telefono" "direccion" "presupuesto" "descripcion" "submit" "reset";
-    }
+    /* HTML COMETARIOS */
+    /*.comentarios{
+        .opinion{
+            width: 100%;
+        }
+    }*/
+    
     /* HTML SOBRE MI */
     .sobre-mi{
         width: 100%;
@@ -875,7 +902,13 @@ footer{
         padding: 40px;
     }
     /* HTML CONTACTO */
-    .medios-contacto{
-        margin: 0 auto;
+    .introduccion-contacto{
+        padding: 0;
+        h1{
+            font-size: 76px;
+        }
+        p{
+            font-size: 32px;
+        }
     }
 }
