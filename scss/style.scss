@@ -557,7 +557,7 @@ footer{
 }
 /* --------------- ESTILOS DE HTML RESEÑAS ---------------*/
 .introduccion-comentar{
-    background-image: url(https://www.oetker.es/Recipe/Recipes/oetker.es/es-es/gateaux/image-thumb__70333__RecipeDetailsLightBox/pastel-ovejita.jpg);
+    background-image: url(../images/pastel-ovejita.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -678,7 +678,7 @@ footer{
 .introduccion-sobre-mi{
     width: 100%;
     height: 100vh;
-    background-image: url(https://aptus.com.ar/wp-content/uploads/2022/04/person-baking-and-decorating-pumpkin-cake-in-kitchen-at-home_t20_P0jjlR-scaled.jpg);
+    background-image: url(../images/armando-pastel.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -736,7 +736,7 @@ footer{
     @include flex-column-center;
     align-items: start;
     padding-left: 50px;
-    background-image: url(https://st2.depositphotos.com/5052879/7494/i/600/depositphotos_74946771-stock-photo-bakery-background.jpg);
+    background-image: url(../images/ingredientes-pastel.png);
     background-repeat: no-repeat;
     background-size: cover;
     h1{
