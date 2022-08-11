@@ -34,23 +34,18 @@ main {
 }
 
 /* TITULOS */
-/*h1{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 76px;
-    font-weight: bold;
-    font-family: Dancing Script;
-    color: #FFF;
-    text-shadow: 2px  0px 0px $colorPrimario, 0px  2px 0px $colorPrimario, -2px  0px 0px $colorPrimario, 0px -2px 0px $colorPrimario;
-    user-select: none;
-}*/
+.titulo2 {
+  background-color: #7d47c3;
+  margin: 70px 0 25px 0;
+  color: #FFF;
+  border-radius: 5px;
+}
+
 h2 {
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
-  padding: 70px 0 25px 0;
-  margin: 0;
-  color: #FF006E;
+  padding: 20px;
   text-decoration: underline;
 }
 
@@ -80,11 +75,14 @@ header {
   border-radius: 0 0 5px 5px;
 }
 header .logo {
-  color: #FFF;
   font-size: 26px;
   user-select: none;
 }
-header .logo span {
+header .logo a {
+  color: #FFF;
+  text-decoration: none;
+}
+header .logo a span {
   font-family: Pacifico;
   font-size: 36px;
 }
@@ -107,21 +105,92 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-header .redes ul {
+header .menu-usuario {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
   gap: 20px;
-  margin: 0;
 }
-header .redes ul li {
+header .menu-usuario button {
+  font-size: 18px;
+  font-weight: bold;
   color: #FFF;
+  border: 2px solid transparent;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+}
+header .menu-usuario button:hover {
+  background-color: #F04589;
+}
+header .menu-usuario button:focus, header .menu-usuario button:hover {
+  border: 2px solid #FFF;
+}
+header .menu-usuario .ingresar {
+  background-color: #FFF;
+  color: #FF006E;
+}
+header .menu-usuario .ingresar:hover {
+  color: #FFF;
+}
+header .menu-usuario .modal-content {
+  background-image: url(../images/background-pastel-2.png);
+}
+header .menu-usuario .modal-content .modal-header {
+  background-color: #FF006E;
+}
+header .menu-usuario .modal-content .modal-header h5 {
   font-size: 26px;
-}
-header .redes ul li a {
+  font-weight: bold;
   color: #FFF;
-  text-decoration: none;
+}
+header .menu-usuario .modal-content .modal-body .username-input {
+  margin: 20px 0;
+}
+header .menu-usuario .modal-content .modal-body .username-input input[type=text] {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 18px;
+  border: 2px solid #FF006E;
+  outline: none;
+  background-color: #F1F3F4;
+}
+header .menu-usuario .modal-content .modal-body .username-input input[type=text]:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
+  background-color: #FFF;
+}
+header .menu-usuario .modal-content .modal-body .password-input {
+  margin: 20px 0;
+}
+header .menu-usuario .modal-content .modal-body .password-input input[type=password] {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 18px;
+  border: 2px solid #FF006E;
+  outline: none;
+  background-color: #F1F3F4;
+}
+header .menu-usuario .modal-content .modal-body .password-input input[type=password]:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
+  background-color: #FFF;
+}
+header .menu-usuario .modal-content .modal-body input[type=submit] {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 8px;
+  background-color: #FF006E;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+}
+header .menu-usuario .modal-content .modal-body input[type=submit]:hover {
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
 }
 
 /* MENU MOBILE*/
@@ -151,7 +220,7 @@ header .redes ul li a {
     text-decoration: none;
     color: #FFF;
   }
-  header .logo, header .redes {
+  header .logo {
     display: none;
   }
   header nav {
@@ -170,6 +239,11 @@ header .redes ul li a {
   }
   header nav ul .logo {
     display: none;
+  }
+  header .menu-usuario {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-evenly;
   }
 }
 /* --------------- ESTILOS DE HTML INDEX ---------------*/
@@ -212,7 +286,7 @@ header .redes ul li a {
   background-color: transparent;
   padding: 10px;
   margin-top: 50px;
-  border: solid 2px #FFF;
+  border: 2px solid #FFF;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -268,6 +342,12 @@ header .redes ul li a {
   font-weight: bold;
   font-size: 32px;
 }
+.lista-productos .producto .detalles-producto .aclaraciones-producto ul li {
+  font-size: 18px;
+  font-weight: bold;
+  color: #7e7e7e;
+  list-style-position: 0;
+}
 .lista-productos .producto .detalles-producto .btn-pedir {
   width: 100%;
   height: 54px;
@@ -305,6 +385,55 @@ header .redes ul li a {
 }
 .lista-productos a .redireccionamiento:hover {
   transform: translateX(25px);
+}
+.lista-productos .modal .modal-header {
+  background-color: #FF006E;
+}
+.lista-productos .modal .modal-header h5 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+}
+.lista-productos .modal .modal-body .metodo-pago .metodo-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.lista-productos .modal .modal-body .metodo-pago .metodo-header h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.lista-productos .modal .modal-body .metodo-pago .metodo-header img {
+  width: auto;
+  height: 25px;
+}
+.lista-productos .modal .modal-body .metodo-pago p {
+  font-size: 18px;
+  text-align: left;
+}
+.lista-productos .modal .modal-body .metodo-pago a {
+  color: #FFF;
+  text-decoration: none;
+}
+.lista-productos .modal .modal-body .metodo-pago a .btn-pedir {
+  width: fit-content;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #FF006E;
+  transition: 0.3s ease all;
+}
+.lista-productos .modal .modal-body .metodo-pago a .btn-pedir:hover {
+  background-color: #F04589;
+}
+.lista-productos .modal .modal-footer .btn-primary {
+  background-color: #FF006E;
+  border: none;
+}
+.lista-productos .modal .modal-footer .btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.5);
 }
 
 /* FORMAS DE PAGO */
@@ -447,11 +576,12 @@ footer .box-footer h3 {
 .mostrador {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/background-pastel-3.png);
+  background-color: #64B96D;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: start;
   gap: 30px;
   overflow: hidden;
 }
@@ -463,24 +593,28 @@ footer .box-footer h3 {
   text-align: center;
 }
 .mostrador .carousel {
-  width: 60%;
-  border: 3px solid #FFF;
-  border-radius: 10px;
+  width: 100%;
+}
+.mostrador .carousel .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 .mostrador .carousel .carousel-inner .carousel-item img {
-  width: 60%;
-  height: 50vh;
-  border-radius: 10px;
+  height: 60vh;
 }
 .mostrador .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-family: Pacifico;
   font-size: 36px;
   text-shadow: 2px 0px 0px #FF006E, 0px 2px 0px #FF006E, -2px 0px 0px #FF006E, 0px -2px 0px #FF006E;
 }
+.mostrador .carousel .carousel-control-next, .mostrador .carousel .carousel-control-prev {
+  width: 5%;
+}
 .mostrador .btn-desplazar {
   background-color: transparent;
   padding: 10px;
-  border: solid 2px #FFF;
+  border: 2px solid #FFF;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -529,52 +663,6 @@ footer .box-footer h3 {
   background-color: #F04589;
 }
 
-.modal .modal-dialog .modal-content .modal-header h5 {
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago .metodo-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago .metodo-header h4 {
-  font-size: 20px;
-  margin: 0;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago .metodo-header img {
-  width: auto;
-  height: 25px;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago p {
-  font-size: 18px;
-  text-align: left;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago a {
-  color: #FFF;
-  text-decoration: none;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago a .btn-pedir {
-  width: fit-content;
-  padding: 8px;
-  margin-top: 20px;
-  border-radius: 5px;
-  background-color: #FF006E;
-  transition: 0.3s ease all;
-}
-.modal .modal-dialog .modal-content .modal-body .metodo-pago a .btn-pedir:hover {
-  background-color: #F04589;
-}
-.modal .modal-dialog .modal-content .modal-footer .btn-primary {
-  background-color: #FF006E;
-  border: none;
-}
-.modal .modal-dialog .modal-content .modal-footer .btn-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.5);
-}
-
 /* --------------- ESTILOS DE HTML RESEÑAS ---------------*/
 .introduccion-comentar {
   background-image: url(../images/pastel-ovejita.png);
@@ -608,7 +696,7 @@ footer .box-footer h3 {
 .introduccion-comentar .contenido button {
   background-color: transparent;
   padding: 10px;
-  border: solid 2px #000;
+  border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -681,7 +769,7 @@ footer .box-footer h3 {
   padding: 10px;
   font-family: Raleway;
   outline: none;
-  border: 2px #FF006E solid;
+  border: 2px solid #FF006E;
 }
 .formulario-opinion form input[type=text]:focus, .formulario-opinion form input[type=text]:hover {
   box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
@@ -691,7 +779,7 @@ footer .box-footer h3 {
   height: 20px;
 }
 .formulario-opinion form input[type=checkbox]:focus, .formulario-opinion form input[type=checkbox]:hover {
-  border: 2px #FF006E solid;
+  border: 2px solid #FF006E;
   box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
 }
 .formulario-opinion form input[type=submit] {
@@ -703,7 +791,7 @@ footer .box-footer h3 {
   border: none;
 }
 .formulario-opinion form input[type=submit]:hover {
-  border: 2px #FF006E solid;
+  border: 2px solid #FF006E;
   box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
 }
 .formulario-opinion form textarea {
@@ -714,7 +802,7 @@ footer .box-footer h3 {
   font-family: Raleway;
   outline: none;
   resize: none;
-  border: 2px #FF006E solid;
+  border: 2px solid #FF006E;
 }
 .formulario-opinion form textarea:focus, .formulario-opinion form textarea:hover {
   box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
@@ -931,7 +1019,7 @@ footer .box-footer h3 {
   outline: none;
 }
 .formulario-contacto form input:focus, .formulario-contacto form input:hover, .formulario-contacto form textarea:focus, .formulario-contacto form textarea:hover {
-  border: 2px #FF006E solid;
+  border: 2px solid #FF006E;
   box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.2);
 }
 .formulario-contacto form textarea {
@@ -994,17 +1082,11 @@ footer .box-footer h3 {
     font-size: 46px;
   }
   .mostrador .carousel {
-    width: 80%;
+    width: 90%;
   }
   .mostrador .carousel .carousel-inner .carousel-item img {
     height: 30vh;
   }
-  /* HTML COMETARIOS */
-  /*.comentarios{
-      .opinion{
-          width: 100%;
-      }
-  }*/
   /* HTML SOBRE MI */
   .sobre-mi {
     width: 100%;

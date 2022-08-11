@@ -23,7 +23,7 @@
     <!-- CABEZERA/MENU -->
     <header class="navbar navbar-expand-lg px-5 py-3">
         <div class="menu-mobile navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><a href="#menu">Menu</a> <i class="gg-menu"></i></div>
-        <div class="logo"><span>Ideal</span></div>
+        <div class="logo"><a href="index.html"><span>Ideal</span></a></div>
         <nav class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav col-md-12">
                 <li><a href="index.html">INICIO</a></li>
@@ -33,12 +33,59 @@
                 <li><a href="pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="redes">
-            <ul>
-                <li><a href="#whatsapp"><i class="bi bi-whatsapp"></i></a></li>
-                <li><a href="#facebook"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="#instagram"><i class="bi bi-instagram"></i></a></li>
-            </ul>
+        <div class="menu-usuario">
+            <button data-bs-toggle="modal" data-bs-target="#exampleModalRegistrarse">Registrarse</button>
+            <button class="ingresar" data-bs-toggle="modal" data-bs-target="#exampleModalIngresar">Ingresar</button>
+            <!-- MODAL INGRESAR -->
+            <div class="modal fade" id="exampleModalIngresar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ingresar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                                <div class="username-input">
+                                    <h4>Usuario</h4>
+                                    <input type="text">
+                                </div>
+                                <div class="password-input">
+                                    <h4>Contraseña</h4>
+                                    <input type="password">
+                                </div>
+                                <input type="submit" value="INGRESAR">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL REGISTRARSE -->
+            <div class="modal fade" id="exampleModalRegistrarse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                                <div class="username-input">
+                                    <h4>Creé su usuario</h4>
+                                    <input type="text">
+                                </div>
+                                <div class="password-input">
+                                    <h4>Establezca su contraseña</h4>
+                                    <input type="password">
+                                    <h4>Repití tu contraseña</h4>
+                                    <input type="password">
+                                </div>
+                                <input type="submit" value="SIGUIENTE">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <section class="inicio">
@@ -89,31 +136,48 @@
                 </div>
             </article>
             <a href="pages/productos.html" ><div class="redireccionamiento">Ver más ></div></a>
-        </section>
-        <!-- MODAL -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Continuando con la compra</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4>Mercado Pago</h4>
-                        <p>Podes pagar con tarjetas de debito, crédito o con saldo disponible en cuenta.</p>
-                        <a href="#" target="_blank"><div class="btn-pedir">Pagar con MercadoPago</div></a>
-                        <hr>
-                        <h4>Transferencia Bancaria</h4>
-                        <p>Aboná tu pago por medio de transferencia bancaria.<br><i>*Deberás subir un comprobante de la transacción*</i></p>
-                        <a href="#" target="_blank"><div class="btn-pedir">Pagar con Transferencia</div></a>
-                        <hr>
-                        <h4>Pago en el momento</h4>
-                        <p>¡Págas al momento en que tu pedido llegué a tu casa!</p>
-                        <a href="#" target="_blank"><div class="btn-pedir">Quiero pagar en el momento</div></a>
+            <!-- MODAL -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Continuando con la compra</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="metodo-pago">
+                                <div class="metodo-header">
+                                    <h4>Mercado Pago</h4>
+                                    <img src="images/mercadopago-2.png" alt="MercadoPago Logo">
+                                </div>
+                                <p>Podes pagar con tarjetas de debito, crédito o con saldo disponible en cuenta.</p>
+                                <img src="images/mastercard.png" alt="" widht="100" height="20">
+                                <img src="images/visa.png" alt="" widht="100" height="20">
+                                <img src="images/naranja.png" alt="" widht="100" height="20">
+                                <a href="#" target="_blank"><div class="btn-pedir">Pagar con MercadoPago</div></a>
+                            </div>
+                            <hr>
+                            <div class="metodo-pago">
+                                <div class="metodo-header">
+                                    <h4>Transferencia Bancaria</h4>
+                                    <img src="images/transferencia-bancaria.png" alt="transferencia bancaria">
+                                </div>
+                                <p>Aboná tu pago por medio de transferencia bancaria.<br><i>*Deberás subir un comprobante de la transacción*</i></p>
+                                <a href="#" target="_blank"><div class="btn-pedir">Pagar con Transferencia</div></a>
+                            </div>
+                            <hr>
+                            <div class="metodo-pago">
+                                <div class="metodo-header">
+                                    <h4>Pago en el momento</h4>
+                                </div>
+                                <p>¡Págas al momento en que tu pedido llegué a tu casa!</p>
+                                <a href="#" target="_blank"><div class="btn-pedir">Quiero pagar en el momento</div></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- CONTENIDO DE FORMAS DE PAGO -->
         <div class="titulo2"><h2>Formas de Pago</h2></div>
         <section class="formas-de-pago">
@@ -220,11 +284,11 @@
         <div class="box-footer">
             <h3>Contacto</h3>
             <ul>
-                <li><i class="bi bi-whatsapp"></i><a href="#whatsapp">WhatsApp</a></li>
-                <li><i class="bi bi-facebook"></i><a href="#facebook">Facebook</a></li>
-                <li><i class="bi bi-instagram"></i><a href="#instagra">Instagram</a></li>
-                <li><i class="bi bi-envelope"></i><a href="#email">Email</a></li>
-                <li><i class="bi bi-telephone-fill"></i><a href="#telefono">Telefono</a></li>
+                <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/3885142501?text=Hola, consulto por" target="_blank">WhatsApp</a></li>
+                <li><i class="bi bi-facebook"></i><a href="https://www.facebook.com/Dari0Rv/" target="_blank">Facebook</a></li>
+                <li><i class="bi bi-instagram"></i><a href="https://www.instagram.com/dariovidal9/" target="_blank">Instagram</a></li>
+                <li><i class="bi bi-envelope"></i><a href="mailto:dariovidal9@gmail.com?subject=Consulta" target="_blank">Email</a></li>
+                <li><i class="bi bi-telephone-fill"></i>3885142501</li>
             </ul>
         </div>
         <div class="box-footer">
@@ -232,7 +296,7 @@
             <ul>
                 <li>Mañana: 08:00 a 12:30</li>
                 <li>Tarde: 14:00 a 21:00</li>
-                <li><i class="fa-solid fa-location-dot"></i>Direccion: </li>
+                <li><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/xmWN8i1QczJE55Pf8" target="_blank">Av. España 1620</a></li>
             </ul>
         </div>
     </footer>
