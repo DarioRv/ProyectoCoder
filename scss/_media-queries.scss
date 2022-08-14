@@ -1,0 +1,150 @@
+/*-------------------- MEDIA QUERIE --------------------*/
+/* MENU MOBILE*/
+@media screen and (max-width: 992px){
+    h2{
+        text-align: center;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 22px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    header{
+        .menu-mobile{
+            width: 100%;
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 50px 5px 50px;
+            background-color: $colorPrimario;
+            a{
+                list-style: none;
+                text-decoration: none;
+                color: #FFF;
+            }
+        }
+        .logo{
+            display: none;
+        }
+        nav{
+            background-color: $colorPrimario;
+            ul{
+                display: block;
+                text-align: center;
+                li{
+                    padding: 10px;
+                    width: 100%;
+                    margin: 0;
+                    border-radius: 0%;
+                    border-top: 2px solid #FFF;
+                }
+                .logo{
+                    display: none;
+                }
+            }
+        }
+        .menu-usuario{
+            margin-top: 20px;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+    .lista-productos{
+        flex-direction: column;
+    }
+    .informacion-complementaria{
+        justify-content: space-between;
+        align-items: center;
+        .envios, .horarios{
+            .detalle-envio, .detalle-horarios{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 610px){
+    .top{
+        bottom: 15px;
+        right: 15px;
+    }
+    .formas-de-pago{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+    .informacion-complementaria{
+        flex-direction: column;
+        .envios, .horarios{
+            .detalle-envio, .detalle-horarios{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .box-footer ul li{
+        justify-content: center;
+    }
+    /* HTML PRODUCTOS */
+    .mostrador{
+        height: 100vh;
+        h1{
+            font-size: 46px;
+        }
+        .carousel{
+            width: 100%;
+            .carousel-item{
+                img{
+                    height: 30vh;
+                }
+            }
+        }
+    }
+    /* HTML SOBRE MI */
+    .sobre-mi{
+        width: 100%;
+    }
+    .sobre-mi .informacion-personal{
+        padding: 40px;
+    }
+    /* HTML CONTACTO */
+    .introduccion-contacto{
+        @include flex-column-center;
+        padding: 0;
+        h1{
+            font-size: 76px;
+        }
+        p{
+            font-size: 32px;
+        }
+        @each $red, $color in $redes {
+            .red-#{$red}{
+                margin-left: 25%;
+                margin-top: 10px;
+                .arroba{
+                    padding: 0px 20px 0px 40px;
+                    transform: translateX(-25px) !important;
+                    a{
+                        display: inline;
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+}

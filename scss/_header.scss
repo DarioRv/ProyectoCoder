@@ -1,0 +1,135 @@
+/* MENU DE NAVEGACION */
+.navbar{
+    padding: 0 50px;
+}
+header{
+    background-color: #FF006E;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    
+    .menu-mobile{
+        display: none;
+    }
+    .logo{
+        font-size: 26px;
+        user-select: none;
+        a{
+            color: #FFF;
+            text-decoration: none;
+            span{
+                font-family: Pacifico;
+                font-size: 36px;
+            }
+        }
+    }
+    nav{
+        ul{
+            @include flex-row-center;
+            list-style: none;
+            li{
+                color: #FFF;
+                font-size: 26px;
+                margin: 10px;
+                a{
+                    color: #FFF;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+    .menu-usuario{
+        @include flex-row-center;
+        gap: 20px;
+        button{
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFF;
+            border: 2px solid transparent;
+            background-color: transparent;
+            padding: 8px;
+            border-radius: 5px;
+            outline: none;
+            &:hover{
+                background-color: $colorHover;
+            }
+            &:focus, &:hover{
+                border: 2px solid #FFF;
+            }
+        }
+        .ingresar{
+            background-color: #FFF;
+            color: $colorPrimario;
+            &:hover{
+                color: #FFF;
+            }
+        }
+        .modal-content{
+            background-image: url(../images/background-pastel-2.png);
+            .modal-header{
+                background-color: $colorPrimario;
+                h5{
+                    font-size: 26px;
+                    font-weight: bold;
+                    color: #FFF;
+                }
+            }
+            .modal-body{
+                .username-input{
+                    margin: 20px 0;
+                    input[type="text"]{
+                        width: 200px;
+                        height: 30px;
+                        border-radius: 5px;
+                        padding: 15px 10px;
+                        font-size: 18px;
+                        border: 2px solid $colorPrimario;
+                        outline: none;
+                        background-color: #F1F3F4;
+                        &:focus{
+                            box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+                            background-color: #FFF;
+                        }
+                    }
+                    
+                }
+                .password-input{
+                    margin: 20px 0;
+                    input[type="password"]{
+                        width: 200px;
+                        height: 30px;
+                        border-radius: 5px;
+                        padding: 15px 10px;
+                        font-size: 18px;
+                        border: 2px solid $colorPrimario;
+                        outline: none;
+                        background-color: #F1F3F4;
+                        &:focus{
+                            box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+                            background-color: #FFF;
+                        }
+                    }
+                }
+                input[type="submit"]{
+                    display: block;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    padding: 8px;
+                    background-color: $colorPrimario;
+                    color: #FFF;
+                    border: none;
+                    border-radius: 5px;
+                    &:hover{
+                        box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+                    }
+                }
+            }
+        }
+    }
+}

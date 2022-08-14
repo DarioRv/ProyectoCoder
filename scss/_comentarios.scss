@@ -1,0 +1,131 @@
+/* --------------- ESTILOS DE HTML RESEÑAS ---------------*/
+.introduccion-comentar{
+    background-image: url(../images/pastel-ovejita.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    @include flex-column-center;
+    .contenido{
+        @include flex-column-center;
+        h1{
+            font-family: Dancing Script;
+            font-size: 96px;
+            text-align: center;
+        }
+        .stars{
+            font-size: 36px;
+        }
+        p{
+            font-family: Pacifico;
+        }
+        button{
+            @include btn-desplazar(#000, #FFF);
+        }
+    }
+}
+.comentarios{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    @include flex-column-center;
+    .opinion{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        padding: 15px;
+        margin: 5px;
+        border-radius: 5px;
+        border-bottom: 5px solid $colorTerciario;
+        background-color: #fff;
+        .nombre-usuario{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            h5{
+                font-size: 24px;
+                margin: 0;
+            }
+        }
+        .opinion-usuario{
+            p{
+                font-size: 18px;
+                text-align: left;
+                color: #7e7e7e;
+            }
+        }
+        .fecha-opinion{
+            display: flex;
+            justify-content: end;
+        }
+        &:hover{
+            box-shadow: 0 7px 11px 0 rgb(0 0 0 / 10%), 0 2px 4px 0 rgb(0 0 0 / 10%);
+        }
+    }
+}
+.formulario-opinion{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(../images/background-pastel-2.png);
+    border-top: 10px solid $colorPrimario;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        input[type="text"]{
+            width: 100%;
+            max-width: 300px;
+            height: 40px;
+            padding: 10px;
+            font-family: Raleway;
+            outline: none;
+            &:focus, &:hover{
+                border: 2px solid $colorPrimario;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+        textarea{
+            width: 100%;
+            max-width: 500px;
+            height: 200px;
+            padding: 10px;
+            font-family: Raleway;
+            outline: none;
+            resize: none;
+            &:focus, &:hover{
+                border: 2px solid $colorPrimario;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+        input[type="checkbox"]{
+            width: 20px;
+            height: 20px;
+            &:focus, &:hover{
+                border: 2px solid $colorPrimario;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+        input[type="submit"]{
+            width: 100px;
+            height: 40px;
+            background-color: $colorPrimario;
+            color: #FFF;
+            outline: none;
+            border: none;
+            &:hover{
+                border: 2px solid $colorPrimario;
+                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+            }
+        }
+    }
+}

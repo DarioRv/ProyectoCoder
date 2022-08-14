@@ -1,0 +1,56 @@
+/* --------------- ESTILOS DE HTML SOBRE MI ---------------*/
+.introduccion-sobre-mi{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/armando-pastel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex-column-center;
+    h1{
+        text-align: center;
+        font-family: Dancing Script;
+        font-size: 96px;
+        color: $colorPrimario;
+    }
+    p{
+        font-family: Pacifico;
+        font-size: 36px;
+        color: #FFF;
+        margin: 20px;
+    }
+    .parrafo-2{
+        color: #000;
+    }
+}
+.sobre-mi{
+    width: 80%;
+    height: fit-content;
+    @include flex-column-center;
+    .avatar{
+        width: 150px;
+        height: 150px;
+        background-color: $colorPrimario;
+        border-radius: 50%;
+        position: relative;
+        bottom: -50px;
+        @include flex-column-center;
+        span{
+            color: #FFF;
+            font-size: 56px;
+            text-align: center;
+            font-family: Pacifico;
+        }
+    }
+    .informacion-personal{
+        width: 100%;
+        height: fit-content;
+        padding: 60px;
+        border-radius: 5px;
+        background-image: url(../images/background-pastel-2.png);
+        p{
+            margin-top: 10px;
+        }
+        border-bottom: 10px solid $colorPrimario;
+    }
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif, Verdana;
+    background-image: url(../images/background-pastel.png);
+}
+main{
+    width: 95%;
+    margin: 0 auto;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    background-color: $colorPrimario;
+    font-size: 36px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 5;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    a{
+        color: #FFF;
+    }
+}
+/* TITULOS */
+.titulo2{
+    background-color: #7d47c3;
+    margin: 70px 0 25px 0;
+    color: #FFF;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: underline;
+}
+h4{
+    font-size: 26px;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}

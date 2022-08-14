@@ -1,0 +1,73 @@
+/* --------------- ESTILOS DE HTML PRODUCTOS ---------------*/
+.mostrador{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background-image: url(../images/background-pastel-3.png);
+    @include flex-column-center;
+    gap: 30px;
+    overflow: hidden;
+    h1{
+        font-size: 76px;
+        font-family: Dancing Script;
+        font-weight: bold;
+        color: #FFF;
+        text-align: center;
+    }
+    .carousel{
+        width: 100%;
+        .carousel-indicators [data-bs-target]{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height: 70vh;
+                }
+                .carousel-caption{
+                    h5{
+                        font-family: Pacifico;
+                        font-size: 36px;
+                        text-shadow: 2px  0px 0px $colorPrimario, 0px  2px 0px $colorPrimario, -2px  0px 0px $colorPrimario, 0px -2px 0px $colorPrimario;
+                    }
+                }
+            }
+        }
+        .carousel-control-next, .carousel-control-prev{
+            width: 5%;
+        }
+    }
+    .btn-desplazar{
+        @include btn-desplazar(#FFF, #FFF);
+    }
+}
+.cartelera{
+    @include flex-column-center;
+    overflow: hidden;
+    .col{
+        margin: 10px;
+        flex: none;
+    }
+    .row > *{
+        padding: 0;
+    }
+}
+.cargar-mas{
+    font-family: 'Raleway', sans-serif, Verdana;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin: 20px 0;
+    background-color: $colorPrimario;
+    transition: .3s ease all;
+    &:hover{
+        cursor: pointer;
+        background-color: $colorHover;
+    }
+}
