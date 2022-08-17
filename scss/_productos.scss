@@ -4,7 +4,9 @@
     height: auto;
     padding-bottom: 20px;
     background-image: url(../images/background-pastel-3.png);
-    @include flex-column-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
     overflow: hidden;
     h1{
@@ -21,17 +23,15 @@
             height: 10px;
             border-radius: 50%;
         }
-        .carousel-inner{
-            .carousel-item{
-                img{
-                    height: 70vh;
-                }
-                .carousel-caption{
-                    h5{
-                        font-family: Pacifico;
-                        font-size: 36px;
-                        text-shadow: 2px  0px 0px $colorPrimario, 0px  2px 0px $colorPrimario, -2px  0px 0px $colorPrimario, 0px -2px 0px $colorPrimario;
-                    }
+        .carousel-item{
+            img{
+                height: 60vh;
+            }
+            .carousel-caption{
+                h5{
+                    font-family: Pacifico;
+                    font-size: 36px;
+                    text-shadow: 2px  0px 0px $colorPrimario, 0px  2px 0px $colorPrimario, -2px  0px 0px $colorPrimario, 0px -2px 0px $colorPrimario;
                 }
             }
         }
@@ -61,7 +61,7 @@
     color: #FFF;
     border: none;
     border-radius: 5px;
-    width: 150px;
+    width: 80%;
     height: 50px;
     margin: 20px 0;
     background-color: $colorPrimario;

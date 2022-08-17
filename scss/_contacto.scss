@@ -39,7 +39,6 @@
                     a{ 
                         font-size: 9px;
                         color: #fff;
-                        padding: 15px 0;
                     }
                 }
                 &:hover{
@@ -81,15 +80,15 @@
             font-size: 18px;
             outline: none;
             &:focus, &:hover{
-                border: 2px solid $colorPrimario;
-                box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, .2);
+                border: 2px solid $colorTerciario;
+                box-shadow: 0 0 0 0.25rem rgba($colorTerciario, .2);
             }
         }
         textarea{
             resize: none;
         }
         input[type="submit"]{
-            background-color: $colorPrimario;
+            background-color: $colorTerciario;
             color: #FFF;
             border-color: transparent;
             margin: 20px 0;
@@ -98,7 +97,7 @@
 }
 .ubicacion{
     background-image: url(../images/background-pastel-2.png);
-    border-top: 10px solid #7d47c3;
+    border-top: 10px solid $colorCuarto;
     @include flex-column-center;
     border-radius: 5px;
     p{

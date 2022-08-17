@@ -102,15 +102,14 @@
     }
     /* HTML PRODUCTOS */
     .mostrador{
-        height: 100vh;
+        height: 80vh;
         h1{
             font-size: 46px;
         }
         .carousel{
-            width: 100%;
             .carousel-item{
                 img{
-                    height: 30vh;
+                    height: 200px;
                 }
             }
         }
@@ -135,7 +134,6 @@
         @each $red, $color in $redes {
             .red-#{$red}{
                 margin-left: 25%;
-                margin-top: 10px;
                 .arroba{
                     padding: 0px 20px 0px 40px;
                     transform: translateX(-25px) !important;

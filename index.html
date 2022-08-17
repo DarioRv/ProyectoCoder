@@ -104,84 +104,98 @@
     <main>
         <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
         <!-- CONTENIDO DE PRODUCTOS -->
-        <div class="titulo2"><h2>Nuestros Productos</h2></div>
-        <section class="lista-productos">
-            <article class="producto">
-                <div class="imagen-producto">
-                    <img src="images/pastel-durazno-2.jpg" alt="Pastel de duraznos">
-                </div>
-                <div class="detalles-producto">
-                    <h4 class="nombre-producto">Pastel de Duraznos</h4>
-                    <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y duraznos</p>
-                    <span class="precio-producto">700$</span>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
-                </div>
-            </article>
-            <article class="producto">
-                <div class="imagen-producto">
-                    <img src="images/tarta-chocolate.jpg" alt="Tarta de chocolate">
-                </div>
-                <div class="detalles-producto">
-                    <h4 class="nombre-producto">Tarta de Chocolate</h4>
-                    <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y chocolate</p>
-                    <span class="precio-producto">650$</span>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
-                </div>
-            </article>
-            <article class="producto">
-                <div class="imagen-producto">
-                    <img src="images/tarta-frutilla.jpg" alt="Tarta de frutillas">
-                </div>
-                <div class="detalles-producto">
-                    <h4 class="nombre-producto">Tarta de Frutilla</h4>
-                    <p class="descripcion-producto">Tarta rellena de crema de leche decorada con crema chantilli y Frutilla</p>
-                    <span class="precio-producto">800$</span>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
-                </div>
-            </article>
-            <a href="pages/productos.html" ><div class="redireccionamiento">Ver más ></div></a>
-            <!-- MODAL -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Continuando con la compra</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="titulo2"><h2>Productos en Tendencia</h2></div>
+        <div class="container-fluid">
+            <section class="lista-productos row justify-content-between align-items-center">
+                <article class="producto col-md-12 col-lg-6 col-xl-3">
+                    <div class="imagen-producto">
+                        <img src="../images/torta-oreo.png" alt="Torta oreo">
+                    </div>
+                    <div class="detalles-producto">
+                        <h4 class="nombre-producto">Torta Oreo</h4>
+                        <span class="precio-producto">4500$</span>
+                        <div class="aclaraciones-producto">
+                            <ul>
+                                <li>Peso: 2,5 kg</li>
+                            </ul>
                         </div>
-                        <div class="modal-body">
-                            <div class="metodo-pago">
-                                <div class="metodo-header">
-                                    <h4>Mercado Pago</h4>
-                                    <img src="images/mercadopago-2.png" alt="MercadoPago Logo">
-                                </div>
-                                <p>Podes pagar con tarjetas de debito, crédito o con saldo disponible en cuenta.</p>
-                                <img src="images/mastercard.png" alt="" widht="100" height="20">
-                                <img src="images/visa.png" alt="" widht="100" height="20">
-                                <img src="images/naranja.png" alt="" widht="100" height="20">
-                                <a href="#" target="_blank"><div class="btn-pedir">Pagar con MercadoPago</div></a>
+                    </div>
+                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                </article>
+                <article class="producto col-md-12 col-lg-6 col-xl-3">
+                    <div class="imagen-producto">
+                        <img src="../images/torta-decorado-dulces.png" alt="Torta decorado dulces">
+                    </div>
+                    <div class="detalles-producto">
+                        <h4 class="nombre-producto">Torta Decorado Dulces</h4>
+                        <span class="precio-producto">5000$</span>
+                        <div class="aclaraciones-producto">
+                            <ul>
+                                <li>Peso: 2,3 kg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                </article>
+                <article class="producto col-md-12 col-lg-6 col-xl-3">
+                    <div class="imagen-producto">
+                        <img src="../images/pastel-decorado-morado.png" alt="Torta decorado morado">
+                    </div>
+                    <div class="detalles-producto">
+                        <h4 class="nombre-producto">Torta Decorado Morado</h4>
+                        <span class="precio-producto">4200$</span>
+                        <div class="aclaraciones-producto">
+                            <ul>
+                                <li>Peso: 2,2 kg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                </article>
+                <a href="pages/productos.html" ><div class="redireccionamiento col-md-12 col-lg-6 col-xl-3">Ver más ></div></a>
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Continuando con la compra</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <hr>
-                            <div class="metodo-pago">
-                                <div class="metodo-header">
-                                    <h4>Transferencia Bancaria</h4>
-                                    <img src="images/transferencia-bancaria.png" alt="transferencia bancaria">
+                            <div class="modal-body">
+                                <div class="metodo-pago">
+                                    <div class="metodo-header">
+                                        <h4>Mercado Pago</h4>
+                                        <img src="images/mercadopago-2.png" alt="MercadoPago Logo">
+                                    </div>
+                                    <p>Podes pagar con tarjetas de debito, crédito o con saldo disponible en cuenta.</p>
+                                    <img src="images/mastercard.png" alt="" widht="100" height="20">
+                                    <img src="images/visa.png" alt="" widht="100" height="20">
+                                    <img src="images/naranja.png" alt="" widht="100" height="20">
+                                    <a href="#" target="_blank"><div class="btn-pedir">Pagar con MercadoPago</div></a>
                                 </div>
-                                <p>Aboná tu pago por medio de transferencia bancaria.<br><i>*Deberás subir un comprobante de la transacción*</i></p>
-                                <a href="#" target="_blank"><div class="btn-pedir">Pagar con Transferencia</div></a>
-                            </div>
-                            <hr>
-                            <div class="metodo-pago">
-                                <div class="metodo-header">
-                                    <h4>Pago en el momento</h4>
+                                <hr>
+                                <div class="metodo-pago">
+                                    <div class="metodo-header">
+                                        <h4>Transferencia Bancaria</h4>
+                                        <img src="images/transferencia-bancaria.png" alt="transferencia bancaria">
+                                    </div>
+                                    <p>Aboná tu pago por medio de transferencia bancaria.<br><i>*Deberás subir un comprobante de la transacción*</i></p>
+                                    <a href="#" target="_blank"><div class="btn-pedir">Pagar con Transferencia</div></a>
                                 </div>
-                                <p>¡Págas al momento en que tu pedido llegué a tu casa!</p>
-                                <a href="#" target="_blank"><div class="btn-pedir">Quiero pagar en el momento</div></a>
+                                <hr>
+                                <div class="metodo-pago">
+                                    <div class="metodo-header">
+                                        <h4>Pago en el momento</h4>
+                                    </div>
+                                    <p>¡Págas al momento en que tu pedido llegué a tu casa!</p>
+                                    <a href="#" target="_blank"><div class="btn-pedir">Quiero pagar en el momento</div></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <!-- CONTENIDO DE FORMAS DE PAGO -->
         <div class="titulo2"><h2>Formas de Pago</h2></div>
         <section class="formas-de-pago">
