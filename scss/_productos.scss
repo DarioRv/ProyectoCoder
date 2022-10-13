@@ -71,3 +71,145 @@
         background-color: $colorHover;
     }
 }
+
+.carrito-icono{
+    width: 50px;
+    height: 50px;
+    background-color: $colorPrimario;
+    font-size: 36px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 5;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+}
+.carrito-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+    .carrito-compras{
+        overflow: auto;
+        z-index: 9;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 60vw;
+        max-height: 90vh;
+        background-color: #fff;
+        border: 2px solid $colorPrimario;
+        border-radius: 5px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .carrito-head{
+            width: 100%;
+            background-color: $colorPrimario;
+            color: #fff;
+            border-radius: 2px 2px 0 0;
+            padding: 5px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h5{
+                text-align: center;
+                font-size: 28px;
+            }
+            button{
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+                font-weight: bolder;
+                border: none;
+                border-radius: 50%;
+                &:hover{
+                    color: $colorPrimario;
+                }
+            }
+        }
+        .carrito-content{
+            padding: 40px;
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    .producto-deseado{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 20px;
+                        background-color: #f7f7f7;
+                        border-radius: 5px;
+                        margin: 10px 0;
+                        .producto-img{
+                            img{
+                                width: 180px;
+                                height: 80px;
+                                border-radius: 5px;
+                            }
+                        }
+                        .producto-detalles{
+                            h5{
+                                font-weight: bold;
+                            }
+                        }
+                        .producto-cantidad{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            button{
+                                border: none;
+                                border-radius: 5px;
+                                width: 30px;
+                            }
+                            input{
+                                width: 80px;
+                                outline: none;
+                                text-align: center;
+                            }
+                        }
+                        .producto-subtotal{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .btn-vaciar-carrito{
+                    width: 100%;
+                    background-color: #fff;
+                    border: 2px solid $colorPrimario;
+                    border-radius: 5px;
+                    padding: 10px;
+                    color: $colorPrimario;
+                    font-weight: bold;
+                    transition: .3s all;
+                    margin: 5px 0;
+                    &:hover{
+                        background-color: $colorPrimario;
+                        color: #fff;
+                    }
+                }
+                .total{
+                    width: 100%;
+                    background-color: $colorPrimario;
+                    border: 2px solid $colorPrimario;
+                    border-radius: 5px;
+                    padding: 10px;
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    transition: .3s all;
+                    display: none;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}

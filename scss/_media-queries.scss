@@ -70,6 +70,15 @@
             }
         }
     }
+    .carrito-content{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        .producto-deseado{
+            flex-direction: column;
+        }
+    }
 }
 @media screen and (max-width: 610px){
     .top{

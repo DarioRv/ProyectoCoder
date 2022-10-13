@@ -146,6 +146,21 @@
     </section>
     <main>
         <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
+        <!-- CARRITO DE COMPRAS -->
+        <div class="carrito-icono d-flex justify-content-center align-items-center" id="carrito-icono"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="carrito-container">
+            <div class="carrito-compras">
+                <div class="carrito-head">
+                    <h5>Carrito de Compras</h5>
+                    <button id="btn-cerrar-carrito">X</button>
+                </div>
+                <div class="carrito-content">
+                    <ul>
+                        <p>Tu carrito está vacío</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- CARTELERA DE PRODUCTOS -->
         <div class="titulo2"><h2>¡Mira los productos que tenemos para vos!</h2></div>
         <section class="cartelera container-fluid" id="cartelera">
@@ -156,14 +171,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Pastel de Duraznos</h4>
-                        <span class="precio-producto">3200$</span>
+                        <span class="precio-producto">$3200</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,7 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -171,9 +186,9 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta de Chocolate</h4>
-                        <span class="precio-producto">900$</span>
+                        <span class="precio-producto">$900</span>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -181,9 +196,9 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta de Frutilla</h4>
-                        <span class="precio-producto">1100$</span>
+                        <span class="precio-producto">$1100</span>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -191,9 +206,9 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta de Manzana</h4>
-                        <span class="precio-producto">960$</span>
+                        <span class="precio-producto">$960</span>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -222,7 +237,7 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Donas</h4>
-                        <span class="precio-producto">1200$</span>
+                        <span class="precio-producto">$1200</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>3 donas glaseadas de chocolate</li>
@@ -230,7 +245,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -238,7 +253,7 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Pastel de chocolate</h4>
-                        <span class="precio-producto">1600$</span>
+                        <span class="precio-producto">$1600</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,5 kg</li>
@@ -246,7 +261,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -254,9 +269,9 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Lemon Pie</h4>
-                        <span class="precio-producto">1200$</span>
+                        <span class="precio-producto">$1200</span>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -264,14 +279,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Chocotorta</h4>
-                        <span class="precio-producto">2100$</span>
+                        <span class="precio-producto">$2100</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>10 porciones</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -279,9 +294,9 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Budín Vainilla</h4>
-                        <span class="precio-producto">600$</span>
+                        <span class="precio-producto">$600</span>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -289,9 +304,9 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Budín Chocolate</h4>
-                        <span class="precio-producto">750$</span>
+                        <span class="precio-producto">$750</span>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -299,14 +314,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Chocolate</h4>
-                        <span class="precio-producto">3500$</span>
+                        <span class="precio-producto">$3500</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 3 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -314,7 +329,7 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Alfajores</h4>
-                        <span class="precio-producto">1300$</span>
+                        <span class="precio-producto">$1300</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>3 Alfajores cubierto de chocolate</li>
@@ -323,7 +338,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -331,14 +346,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Vainilla</h4>
-                        <span class="precio-producto">2500$</span>
+                        <span class="precio-producto">$2500</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,6 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -367,14 +382,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Cupcakes</h4>
-                        <span class="precio-producto">800$</span>
+                        <span class="precio-producto">$800</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>5 unidades</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir sin-stock" data-bs-toggle="modal" data-bs-target="#exampleModal">No disponible aún</button>
+                    <button class="btn-pedir sin-stock">No disponible aún</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -382,14 +397,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Oreo</h4>
-                        <span class="precio-producto">4500$</span>
+                        <span class="precio-producto">$4500</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,5 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -397,14 +412,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Tiramisu</h4>
-                        <span class="precio-producto">4000$</span>
+                        <span class="precio-producto">$4000</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,5 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -412,14 +427,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Decorado Dulces</h4>
-                        <span class="precio-producto">5000$</span>
+                        <span class="precio-producto">$5000</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,3 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -427,14 +442,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Frutilla</h4>
-                        <span class="precio-producto">4000$</span>
+                        <span class="precio-producto">$4000</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 1,9 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -442,14 +457,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Tarta Frutos Rojos</h4>
-                        <span class="precio-producto">4300$</span>
+                        <span class="precio-producto">$4300</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,4 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -457,14 +472,14 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Decorado Celeste</h4>
-                        <span class="precio-producto">4300$</span>
+                        <span class="precio-producto">$4300</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,4 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
                 <article class="producto col">
                     <div class="imagen-producto">
@@ -472,15 +487,16 @@
                     </div>
                     <div class="detalles-producto">
                         <h4 class="nombre-producto">Torta Decorado Morado</h4>
-                        <span class="precio-producto">4200$</span>
+                        <span class="precio-producto">$4200</span>
                         <div class="aclaraciones-producto">
                             <ul>
                                 <li>Peso: 2,2 kg</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="btn-pedir" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                    <button class="btn-pedir">Comprar</button>
                 </article>
+                <!--  data-bs-toggle="modal" data-bs-target="#exampleModal" -->
                 <!-- MODAL -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -567,5 +583,6 @@
     <!-- Otros Js-->
     <script src="https://kit.fontawesome.com/15af1132eb.js" crossorigin="anonymous"></script>
     <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
