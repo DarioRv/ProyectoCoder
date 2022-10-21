@@ -584,6 +584,19 @@ header .menu-usuario .modal-content .modal-body input[type=submit]:hover {
   user-select: none;
   color: #fff;
 }
+.carrito-icono .carrito-cantidad-articulos {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  display: none;
+}
 
 .carrito-container {
   position: fixed;
@@ -703,10 +716,91 @@ header .menu-usuario .modal-content .modal-body input[type=submit]:hover {
   font-weight: bold;
   text-align: center;
   transition: 0.3s all;
-  display: none;
   margin: 5px 0;
 }
 
+.info-alert {
+  max-width: 400px;
+  background-color: #f7f7f7;
+  box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 26px;
+  z-index: 2;
+  transform: translateX(450px);
+  animation: 4s MostrarAlert;
+}
+.info-alert span {
+  color: rgb(65, 147, 255);
+}
+
+.check-alert {
+  max-width: 400px;
+  background-color: #f7f7f7;
+  box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 26px;
+  z-index: 2;
+  transform: translateX(450px);
+  animation: 4s MostrarAlert;
+}
+.check-alert span {
+  color: rgb(35, 209, 0);
+}
+
+.error-alert {
+  max-width: 400px;
+  background-color: #f7f7f7;
+  box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 26px;
+  z-index: 2;
+  transform: translateX(450px);
+  animation: 4s MostrarAlert;
+}
+.error-alert span {
+  color: rgb(255, 65, 65);
+}
+
+.warning-alert {
+  max-width: 400px;
+  background-color: #f7f7f7;
+  box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 26px;
+  z-index: 2;
+  transform: translateX(450px);
+  animation: 4s MostrarAlert;
+}
+.warning-alert span {
+  color: rgb(255, 146, 57);
+}
+
+@keyframes MostrarAlert {
+  0% {
+    transform: translateX(450px);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
 /* --------------- ESTILOS DE HTML RESEÑAS ---------------*/
 .introduccion-comentar {
   background-image: url(../images/pastel-ovejita.png);

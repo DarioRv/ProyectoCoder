@@ -144,23 +144,25 @@
         <h1 class="animate__animated animate__fadeInDown">Compra todo eso que te gusta</h1>
         <button class="btn-desplazar animate__animated animate__fadeInUp"><a href="#cartelera">¡ORDENAR YA!</a></button>
     </section>
-    <main>
-        <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
-        <!-- CARRITO DE COMPRAS -->
-        <div class="carrito-icono d-flex justify-content-center align-items-center" id="carrito-icono"><i class="fa-solid fa-cart-shopping"></i></div>
-        <div class="carrito-container">
-            <div class="carrito-compras">
-                <div class="carrito-head">
-                    <h5>Carrito de Compras</h5>
-                    <button id="btn-cerrar-carrito">X</button>
-                </div>
-                <div class="carrito-content">
-                    <ul>
-                        <p>Tu carrito está vacío</p>
-                    </ul>
-                </div>
+    <!-- CARRITO DE COMPRAS -->
+    <div class="carrito-icono d-flex justify-content-center align-items-center" id="carrito-icono"><i class="fa-solid fa-cart-shopping"></i><span class="carrito-cantidad-articulos">#</span></div>
+    <div class="carrito-container">
+        <div class="carrito-compras">
+            <div class="carrito-head">
+                <h5>Carrito de Compras</h5>
+                <button id="btn-cerrar-carrito">X</button>
+            </div>
+            <div class="carrito-content">
+                <ul>
+                    <p>Tu carrito está vacío</p>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="alerts"></div>
+    <!-- <div class="info-alert">PRODUCTO AGREGADO  <span><i class="fa-sharp fa-solid fa-circle-info"></i></span></div> -->
+    <main>
+        <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
         <!-- CARTELERA DE PRODUCTOS -->
         <div class="titulo2"><h2>¡Mira los productos que tenemos para vos!</h2></div>
         <section class="cartelera container-fluid" id="cartelera">
@@ -583,6 +585,8 @@
     <!-- Otros Js-->
     <script src="https://kit.fontawesome.com/15af1132eb.js" crossorigin="anonymous"></script>
     <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+    <!-- Mis scripts -->
+    <script src="../js/libreria.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

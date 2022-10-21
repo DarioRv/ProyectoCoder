@@ -7,6 +7,11 @@ $color-facebook: #3b5998;
 $color-whatsapp: #00bb2d;
 $color-instagram: #ff008f;
 $redes:(whatsapp: $color-whatsapp, facebook: #0060D4, instagram: $color-instagram);
+$colorInfomacion: rgb(65, 147, 255);
+$colorError: rgb(255, 65, 65);
+$colorOk: rgb(35, 209, 0);
+$colorWarning: rgb(255, 146, 57);
+$tiposAlerts:(info: $colorInfomacion, check: $colorOk, error: $colorError, warning: $colorWarning);
 @mixin flex-row-center{
     display: flex;
     justify-content: center;
