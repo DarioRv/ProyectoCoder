@@ -109,6 +109,7 @@
             </div>
         </div>
     </div>
+    <div class="alerts"></div>
     <main>
         <div class="top d-flex justify-content-center align-items-center"><a href="#top"><i class="bi bi-chevron-up"></i></a></div>
         <!-- RESEÑAS -->
@@ -189,14 +190,14 @@
         </section>
         <div class="titulo2"><h2>Añade tu opinión al resto</h2></div>
         <section class="formulario-opinion" id="opinar">
-            <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <form action="" method="get" enctype="application/x-www-form-urlencoded">
                 <input type="text" name="nombre" placeholder="Nombre" required>
                 <textarea name="opinion" placeholder="Escribí aquí tu opinión..." required></textarea>
                 <div class="checkbox d-flex align-items-center gap-2">
                     <input type="checkbox" name="check" id="check" required>
                     <label for="check">Acepto los <a href="#">términos y condiciones</a></label>
                 </div>
-                <input type="submit" value="ENVIAR">
+                <input type="submit" value="ENVIAR" id="btn-enviar">
             </form>
         </section>
     </main>
@@ -241,5 +242,8 @@
     <!-- Otros Js-->
     <script src="https://kit.fontawesome.com/15af1132eb.js" crossorigin="anonymous"></script>
     <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+    <!-- Mis scripts -->
+    <script src="../js/librerias/alerts.js"></script>
+    <script src="../js/registroOpinion.js"></script>
 </body>
 </html>
