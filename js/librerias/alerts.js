@@ -16,7 +16,7 @@ let setIcon = (alertType) => {
 }
 let positionTop = 60
 let cantidadAlerts = 0
-let mostrarAlert = (tipoAlert, mensajeAlert) => {
+export let mostrarAlert = ({type, text}) => {
     /*
     Tipos de alerts: 
      - "info-alert" => Alerta de información
@@ -24,13 +24,13 @@ let mostrarAlert = (tipoAlert, mensajeAlert) => {
      - "error-alert" => Alerta de error crítico
     */
     let contenedor = document.createElement("div")
-    contenedor.setAttribute("class", `${tipoAlert}`)
-    contenedor.innerHTML += `${mensajeAlert}  <span>${setIcon(tipoAlert)}</span>`
+    contenedor.setAttribute("class", `${type}`)
+    contenedor.innerHTML += `${text}  <span>${setIcon(type)}</span>`
     if (document.querySelector(".alerts") == null){
         document.querySelector("body").innerHTML += `<div class="alerts"></div>`
     }
     document.querySelector(".alerts").appendChild(contenedor)
-    document.querySelectorAll(`.${tipoAlert}`)[cantidadAlerts].style.top = `${positionTop}px`
+    document.querySelectorAll(`.${type}`)[cantidadAlerts].style.top = `${positionTop}px`
     positionTop += 80
     cantidadAlerts += 1
     setTimeout(() => { 

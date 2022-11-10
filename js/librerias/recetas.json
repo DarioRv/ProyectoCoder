@@ -1,0 +1,210 @@
+[
+{
+    "nombre": "Flan de café al horno",
+    "imagen": "/images/recetas/flan-de-cafe.png",
+    "tiempoTotal": "25 min",
+    "ingredientes": ["150 ml de café instantáneo", "4 huevos medianos", "350 ml de leche", "1 cucharadita de esencia de vainilla", "100 gr de azúcar blanco", "150 gr de azúcar", "3 cucharadas de agua", "2 cucharaditas de zumo de limón"],
+    "pasos": [
+        "Comenzamos preparando el caramelo líquido, para cubrir el fondo de los moldes o molde escogido, en una cazuela ponemos el azúcar que llevamos a fuego medio, cuando comience a ponerse color ocre le añadimos el agua a cucharadas y sin dejar de remover, terminamos añadiendo las dos cucharas de zumo de limón y retiramos del fuego antes de que oscurezca para evitar que nos amargue.",
+        "Vertemos el caramelo rápidamente en los moldes antes de que endurezca.",
+        "Preparamos el café en la cafetera o podemos usar café soluble con agua. Calentamos en una cazuela la leche y sin dejar que hierba, le echamos el azúcar, removemos con unas varillas, añadimos el café y la esencia de vainilla y seguimos removiendo hasta que se integren bien los ingredientes, apagamos el fuego y dejamos que se temple.",
+        "En un bol batimos los huevos y le añadimos poco a poco la leche, removemos continuamente.",
+        "Precalentamos el horno a 170 ºC, llenamos cada molde con esta mezcla, los cubrimos con papel de aluminio para evitar que hagan costra y los introducimos en una bandeja de horno profunda, de manera que al llenarla con agua caliente cubran los moldes por la mitad de su tamaño, los dejamos de 45 a 50 minutos.",
+        "Comprobamos pinchando con un palito que los tenemos ya listos, si éste no sale limpio, los dejaremos unos minutos más.",
+        "Les retiramos el aluminio y con cuidado los pasamos a otra bandeja con agua fría, para después meterlos en el frigorífico por un par de horas mínimo.",
+        "Para desmoldarlos pasamos un cuchillo fino por los lados y le damos la vuelta con unos golpes y listos para comer!, acompáñalo de nata, unas nueces y disfruta de su sabor!."
+    ]
+},
+{
+    "nombre": "Mousse de chocolate",
+    "imagen": "/images/recetas/mousse-de-chocolate.png",
+    "tiempoTotal": "20 min",
+    "ingredientes": ["200 gr de chocolate negro", "50 gr de mantequilla", "400 gr de nata para montar o crema de leche"],
+    "pasos": [
+            "Lo primero que tenemos que hacer para preparar este mousse es poner a calentar agua en una cazuela hasta que hierva. Entonces le acoplamos encima un bol de manera que la base no toque el agua.",
+            "Cortamos la tableta de chocolate en cuadrados y la ponemos en el bol, añadimos ahora la mantequilla y sin dejar de remover con la lengua de cocina, le vamos dando vueltas hasta que veamos que el chocolate está derretido y la mezcla homogeneizada.",
+            "El chocolate y la mantequilla también se puede fundir en el microondas, pero el tema es muy delicado porque si nos pasamos de tiempo o potencia, podemos liar una buena.",
+            "Apagamos el fuego y sin retirar de la cazuela el bol, añadimos 100 gr de la nata y removemos constantemente hasta que este disuelto y reservamos. Si usamos chocolate negro probamos y si es necesario añadimos un poco de azúcar.",
+            "Para montar la nata sin problemas debemos tenerla bien fría y lo mismo pasa con los utensilios que vamos a utilizar, así que antes tendremos que meter en el congelador el recipiente donde la vamos a batir y las varillas durante unos minutos hasta que se enfríen.",
+            "Ponemos la nata líquida bien fría en el recipiente y batimos con la batidora de varillas hasta que la nata suba a punto de chantilly.",
+            "Ahora mezclamos esta nata con el chocolate fundido que habíamos reservado, introduciendo poco a poco la nata y mezclando con movimientos envolventes hasta conseguir que se integre perfectamente.",
+            "Nos tiene que quedar una crema suave, la cual vamos a repartir en cuatro recipientes individuales y seguidamente los metemos en la nevera durante 2 horas aproximadamente hasta que la mousse coja consistencia y se refresque.",
+            "Antes de servir esta mousse de chocolate a la mesa, podemos añadir un poco de chocolate rallado por encima o si lo prefieres unas galletas desmenuzadas. Buen provecho!!"
+    ]
+},
+{
+    "nombre": "Tiramisú",
+    "imagen": "/images/recetas/tiramisu-italiano-casero.PNG",
+    "tiempoTotal": "20 min",
+    "ingredientes": ["Bizcochos soletilla", "600 gr de Mascarpone", "120 gr de azúcar glas", "6 claras de huevo", "6 yemas de huevo", "200 ml de café", "100 ml de ron o coñac", "Chocolate negro rallado", "Cacao en polvo", "Sal"],
+    "pasos": [
+            "Comenzamos echando las yemas de huevo en un bol junto con la mitad del azúcar glass.",
+            "Batimos bien con las varillas hasta que espumen las yemas.",
+            "Agregamos el Mascarpone y continuamos mezclando hasta conseguir una mezcla homogénea tipo crema.",
+            "En otro bol agregamos las claras de huevo junto con la otra mitad del azúcar glass y una pizca de sal.",
+            "Mezclamos con las varillas enérgicamente hasta dejarlas a punto de nieve.",
+            "Con las claras ya montadas, agregamos la crema de las yemas que habíamos reservado y mezclamos con una paleta hasta que se integre por completo.",
+            "Cuando tengamos una crema con una consistencia parecida a la de yogur, dejamos a un lado y reservamos para más adelante.",
+            "Mezclamos el café templado con el ron o coñac y vertemos en un plato hondo o recipiente donde podamos mojar los bizcochos.",
+            "Preparamos un molde rectangular donde iremos formando una base con los bizcochos de soletilla previamente humedecidos en la mezcla de café y licor.",
+            "Cuando tengamos formada la base del tiramisú, agregamos la mitad de la crema que tenemos reservada, extendiéndola perfectamente por encima de los bizcochos.",
+            "Seguidamente, espolvoreamos chocolate negro rallado por encima de la crema y volvemos a formar otra base de bizcochos humedecidos.",
+            "Ahora extendemos el resto de la crema, espolvoreamos de nuevo con chocolate rallado y por último, espolvoreamos cacao en polvo formando una capa muy fina por encima del chocolate.",
+            "Introducimos el molde en el frigorífico por lo menos durante 3 horas y lo tendremos listo para degustar. Yo recomiendo tenerlo de un día para otro, así estará mucho más rico."
+
+    ]
+},
+{
+    "nombre": "Arroz con leche",
+    "imagen":"/images/recetas/arroz-con-leche-casero.png",
+    "tiempoTotal": "10 min",
+    "ingredientes": ["1 litro de leche", "100 gr de arroz redondo", "150 gr de azúcar", "1 trocito de piel de limón", "1 ramita de canela", "Canela molida"],
+    "pasos": [
+            "En primer lugar, vamos a poner a calentar a fuego medio la leche en un cazo junto con el arroz, la ramita de canela y un trocito de piel de limón (solo la parte amarilla).",
+            "Cocinamos durante 25 minutos removiendo de vez en cuando para evitar que el arroz se pegue en el fondo del cazo.",
+            "Después agregamos el azúcar y continuamos cociendo el arroz durante 15-20 minutos más. Siempre vigilando y removiendo de vez en cuando (cada 4-5 minutos) para que no se nos queme, ya que eso nos estropearía este fantástico postre.",
+            "Una vez transcurrido el tiempo y cuando veamos que el arroz con leche está quedando con una textura muy melosa, retiramos el cazo del fuego y continuamos removiendo hasta que se temple un poco. Así evitaremos que termine quemándose.",
+            "Dejamos a temperatura ambiente hasta que se enfríe y retiramos la piel de limón y la ramita de canela.",
+            "Después distribuimos en recipientes individuales y los metemos en el frigorífico por lo menos 1 hora.",
+            "Por último, cuando llegue el momento de servirlo a la mesa, espolvoreamos un poco de canela molida por encima de cada uno y ya está listo para disfrutar de nuestro arroz con leche casero. Ya puedes saborear uno de los postres más populares que existen desde hace muchos años."
+    ]
+},
+{
+    "nombre": "Budín de pan casero",
+    "imagen": "/images/recetas/budin-de-pan.png",
+    "tiempoTotal": "15 min",
+    "ingredientes": ["4 huevos", "3/4 de litro de leche", "4 tazas de miga de pan del día anterior", "2 tazas de azúcar", "½ taza de agua", "Unas gotas de zumo de limón"],
+    "pasos": [
+            "Troceamos el pan con las manos en pedacitos pequeños y los ponemos a remojo con la mitad de la leche en un bol. Dejamos reposando para que el pan absorba toda la leche.",
+            "En otro recipiente batimos los huevos y seguidamente agregamos el azúcar que habíamos reservado y el resto de la leche. Mezclamos bien hasta que los ingredientes queden integrados.",
+            "Ahora añadimos todo el pan remojado y mezclamos todo bien. Este es un punto importante, pues la miga de pan tiene que quedar bien disuelta y los trocitos de pan deshechos por completo.",
+            "Cuando tengamos la mezcla lista, la verteremos en el molde sobre el caramelo y ya lo tendremos preparado para meterlo en el horno.",
+            "Precalentamos el horno a una temperatura de 180º C.",
+            "Introducimos el molde en otro recipiente apto para el horno y llenamos de agua hasta que llegue un poquito más de la mitad del molde aproximadamente.",
+            "Cuando el horno haya alcanzado la temperatura indicada, introducimos el recipiente con el molde y horneamos durante 45 minutos.",
+            "Antes de sacar el budín del horno, es recomendable comprobar pinchando con un palillo y si sale limpio, es que ya está listo.",
+            "Transcurrido el tiempo indicado y si el budín está bien hecho por dentro, lo sacaremos y dejamos que se enfríe unos 30 minutos a temperatura ambiente sin desmoldar.",
+            "Pasado ese tiempo metemos el molde en el frigorífico durante 3 horas.",
+            "En el momento de servir a la mesa, sacamos del frigorífico y desmoldamos nuestro budín volteándolo sobre una fuente como si de un flan se tratase."
+    ]
+},
+{
+    "nombre": "Mousse de fresas",
+    "imagen": "/images/recetas/mousse-de-fresas.png",
+    "tiempoTotal": "30 min",
+    "ingredientes": ["500 gr de fresas", "1 sobre de gelatina de fresa en polvo", "200 ml de agua", "250 gr de nata líquida para montar", "3 cucharadas de azúcar"],
+    "pasos": [
+            "En primer lugar, vamos a quitar los sépalos y los pedículos de las fresas, o lo que es lo mismo, las hojitas y el rabito.",
+            "Ahora las sumergimos en un recipiente con agua y lavamos a conciencia hasta que queden bien limpias.",
+            "Escurrimos las fresas y las metemos en el recipiente de la batidora previamente cortadas por la mitad.",
+            "Trituramos bien hasta que queden tipo batido. Luego las colamos para retirarles todas las semillas que hayan podido quedar, de esta manera el mousse quedará con una textura mucho más suave.",
+            "En una cazuela ponemos a calentar 100 ml de agua y cuando comience a hervir, añadimos el sobre de gelatina.",
+            "Removemos continuamente y añadimos los otros 100 ml de agua a poder ser fría.",
+            "Mezclamos y retiramos del fuego para finalmente traspasarlo a un bol, dejamos que se enfríe y lo llevamos a la nevera por 1 hora y media hasta que cuaje.",
+            "Pasado el tiempo indicado, montaremos la nata, para ello es indispensable que la nata se encuentre bien fría, por lo que deberás tenerla refrigerada unas horas antes de preparar este rico mousse de fresas.",
+            "Agregamos la nata líquida en un recipiente y con una batidora de varillas comenzamos a batir a velocidad media y poco a poco subimos a alta hasta terminar de montarla. Este paso lo podemos hacer también a mano pero nos costará más tiempo.",
+            "Ahora agregamos el azúcar y removemos un poco hasta que se integre bien.",
+            "Añadimos la nata montada al batido de fresas, mezclamos suavemente con una paleta haciendo movimientos envolventes.",
+            "Deshacemos la gelatina con las mismas varillas y lo añadimos a la mezcla de nata y fresas, probamos por si hay que rectificar de azúcar.",
+            "Distribuimos en vasos de cristal individuales y metemos los recipientes en el frigorífico durante al menos 2 horas.",
+            "Ahora ya solo queda decorar el mousse de fresa a nuestro gusto y disfrutarlo. Buen provecho!!"
+    ]
+},
+{
+    "nombre": "Tarta de plátano",
+    "imagen": "/images/recetas/tarta-platano.png",
+    "tiempoTotal": "25 min",
+    "ingredientes": ["1 paquete de galletas relieve", "150 gr mantequilla", "3 plátanos", "150 gr de dulce de leche", "400 ml de nata para montar", "2 cucharadas de azúcar blanco", "Chocolate para decorar al gusto"],
+    "pasos": [
+            "Comenzamos triturando las galletas en la batidora o las ponemos en una bolsa hermética y las machacamos con un rodillo hasta deshacerlas. Las pasamos a un bol y le añadimos la mantequilla derretida en el microondas, mezclamos.",
+            "Continuamos forrando un molde desmontable de 22 cm con papel vegetal y lo rellenamos con las galletas cubriendo el fondo y parte de los laterales. Nos ayudamos de una lengua pastelera y de la base de un vaso para alisarlo bien.",
+            "Lo llevamos al congelador mientras montamos al nata.",
+            "En el vaso de la batidora, echamos la nata líquida y cuando veamos que la nata comienza a subir le añadimos dos cucharaditas de azúcar, terminamos de montar en un par de minutos sin dejar que se pase para que no se nos estropee y se haga mantequilla, la refrigeramos.",
+            "Sacamos la base con las galletas, pelamos los plátanos y los cortamos en láminas, los vamos colocando por la toda la superficie.",
+            "En un bol ponemos el dulce de leche, le añadimos dos cucharadas de agua y lo metemos al microondas a 200w durante 10 segundos, lo justo para que nos sea más fácil de untar. Cubrimos los plátanos con el dulce de leche.",
+            "Pasamos la nata a una manga pastelera con una boquilla redonda, aunque puedes usar la que tengas más a mano y vamos repartiendo la nata en montañitas de manera que esté la tarta toda cubierta.",
+            "Rayamos el chocolate y lo espolvoreamos por encima de la tarta, la metemos en el frigorífico durante una hora y ya la podremos servir, espero que os guste!"
+    ]
+},
+{
+    "nombre": "Tarta mousse de fresas",
+    "imagen": "/images/recetas/tarta-mousse-de-fresas.png",
+    "tiempoTotal": "1 hr 20 min",
+    "ingredientes": ["1 paquete de galletas maría", "150 gr mantequilla", "300 ml de nata con más de 35 % de materia grasa", "300 gr de fresas", "10 gr de gelatina en polvo sin sabor o 6 hojas de gelatina", "120 gr azúcar blanco o 2 cucharaditas de stevia líquido", "80 ml de agua fría", "100 gr de fresas", "100 ml de nata", "8 onzas de chocolate para fundir"],
+    "pasos": [
+            "Comenzamos lavando las fresas y quitándoles el rabito, las dejamos escurriendo mientras nos ponemos a machacar las galletas en la trituradora. Tenemos que dejar las galletas con una textura muy suave como si fuera pan rallado, de manera que no nos queden trocitos y las pasamos a un bol grande.",
+            "Ahora ponemos la mantequilla en un bol apto para el microondas para derretirla a baja potencia, unos 25 segundos aproximadamente.",
+            "Incorporamos la mantequilla al bol de las galletas y lo mezclamos bien para que se empapen, con la ayuda de una espátula apretamos para que quede compacta y ya la podemos pasar al molde desmontable que tenemos preparado. Lo alisamos apretando de manera que cubra todo el fondo y lo llevamos a refrigerar por 20 minutos para que se endurezca la masa.",
+            "Preparamos la gelatina en láminas, tenemos saber que un sobre de gelatina en polvo de 10 gr equivalen a 6 láminas. Las ponemos en un recipiente y las cubrimos con suficiente agua fría para que las cubra y se hidraten.",
+            "Pasados 10 minutos las apretamos con las manos para escurrirlas bien y las ponemos en un bol.",
+            "Metemos el bol en el microondas a baja potencia durante 30 segundos hasta que veamos que la gelatina ya está líquida y lista para usar.",
+            "Montamos la nata, la cual debe de estar refrigerada, igual que los utensilios que vamos a utilizar como el bol y las varillas, los cuales han de estar fríos para que podamos montar la nata sin problemas.",
+            "Llenamos el bol con unos 400 gramos de nata y lo batimos durante 3-4 minutos hasta llegar a montar, siendo importante no exceder el tiempo indicado porque se puede convertir en mantequilla, solo hay que batir hasta lograr una suave textura como la del chantilly.",
+            "De la nata montada reservamos 100 gr en otro recipiente para utilizarl en la decoración final y lo guardamos todo en la nevera.",
+            "Pasamos las fresas previamente lavadas a un bol reservando algunas de ellas para laminarlas y otras para la decoración del final. El resto de las fresas las trituramos junto con el azúcar o la stevia hasta conseguir un puré.",
+            "Le incorporamos al puré de fresas, la gelatina y mezclamos bien.",
+            "Sacamos la nata de la nevera y la vamos agregando al puré para convertirlo en una mousse, tendremos que hacerlo con movimientos circulares poco a poco y en varias veces para que no pierda consistencia.",
+            "Continuamos con el molde de las galletas, lo decoramos por los laterales con las fresas laminadas, una vez tengamos todo cubierto le añadimos la mousse, la asentamos con algún movimiento y la alisamos por arriba con la espátula.",
+            "Metemos la tarta en la nevera durante unas 4 horas para que se solidifique, aunque lo mejor sería dejarlo hasta el día siguiente si no tenemos prisa.",
+            "Pasado el tiempo indicado fundimos el chocolate al baño maría o en el microondas y lo vertemos sobre papel film con cuidado de no quemarnos.",
+            "Pasado el tiempo indicado la desmoldamos con cuidado y la pasamos a una fuente. Seguidamente decoramos con la nata y con las fresas que habíamos reservado.",
+            "Rallamos las onzas de chocolate y espolvoreamos por encima de nuestra tarta de mousse de fresas.",
+            "Ya solo queda meterla en la nevera hasta el momento de servirla a la mesa. Buen provecho!!"
+    ]
+},
+{
+    "nombre": "Helado de fresa",
+    "imagen": "/images/recetas/helado-fresas.png",
+    "tiempoTotal": "20 min",
+    "ingredientes": ["500 gr de fresas", "100 gr de azúcar", "240 ml de nata para montar o crema para batir bien fría", "3 yemas de huevo"],
+    "pasos": [
+            "Lo primero que tenemos que hacer es limpiar las fresas frescas y seguidamente cortarlas por la mitad.",
+            "Pasamos las fresas por la batidora hasta conseguir que queden totalmente trituradas como si fuera un batido.",
+            "En un cazo ponemos a calentar a fuego medio-alto un par de vasos de agua hasta llevarlo a ebullición.",
+            "En un bol de cristal resistente al calor agregamos las yemas de huevo junto a el azúcar.",
+            "Cuando el agua del cazo comience a hervir, bajamos el fuego al mínimo y ponemos el bol de las yemas encima del cazo. De esta forma haremos la mezcla al baño maría.",
+            "Comenzamos a batir las yemas junto con el azúcar con una batidora de varillas hasta que veamos que cambia a un color entre blanquecino y amarillento, esto nos llevará unos 5 minutos aproximadamente. Retiramos el bol y dejamos que la mezcla se atempere a temperatura ambiente.",
+            "Mientras tanto, en otro bol vamos a montar la nata, para ello, vertemos la nata para montar, la cual deberá de estar bien fría.",
+            "Batimos con la batidora de varillas durante 3-4 minutos hasta que se formen picos.",
+            "Iremos agregando poco a poco la nata montada al recipiente de las yemas y removiendo con movimientos suaves y envolventes con la ayuda de una espátula hasta que todo se integre perfectamente.",
+            "Ahora ya tenemos la base para nuestro helado, la cual es perfecta para hacer helados caseros de frutas, en este caso de fresa.Ahora ya tenemos la base para nuestro helado, la cual es perfecta para hacer helados caseros de frutas, en este caso de fresa.",
+            "Incorporamos el batido de fresas que tenemos reservado y mezclamos suavemente y con movimientos envolventes hasta conseguir una mezcla homogénea.",
+            "Ahora ya solo queda verter esta mezcla en un túper de plástico o de cristal, extenderla bien y guardar en el congelador durante al menos 4 horas. Yo prefiero tenerlo toda una noche para que compacte mucho mejor.",
+            "Sacamos el helado de fresa casero del congelador 5 minutos antes de servirlo y dejamos que se atempere un poco, así será más fácil formar nuestras bolas de helado. Buen provecho!!"
+    ]
+},
+{
+    "nombre": "Magdalenas de chocolate",
+    "imagen": "/images/recetas/magdalena-de-chocolate.png",
+    "tiempoTotal": "25 min",
+    "ingredientes": ["200 gr de harina de trigo", "70 gr de cacao en polvo", "12 gr levadura química (Royal)", "3 huevos", "50 ml de leche", "100 gr de azúcar moreno", "50 gr de pepitas de chocolate", "100 ml de aceite de oliva"],
+    "pasos": [
+            "Tendremos que mezclar los ingredientes secos en un recipiente, los cuales son la harina, el cacao y la levadura. Después tamizamos la mezcla y reservamos.",
+            "Luego batimos enérgicamente los huevos en un bol, siendo recomendable que utilicemos unas varillas eléctricas.",
+            "Al mismo tiempo que batimos los huevos, añadimos poco a poco el azúcar moreno, el aceite de oliva y por último la leche. Es importante que no dejemos de batir mientras agregamos estos ingredientes.",
+            "Incorporamos la mezcla de harina, levadura y cacao que habíamos reservado, la cual deberemos de agregar poco a poco y sin dejar de remover.",
+            "Cuando consigamos una mezcla fina y homogénea, paramos de remover, tapamos el bol con papel film y guardamos en el frigorífico.",
+            "Mientras tanto, precalentamos el horno a una temperatura de 200º C con calor arriba y abajo y colocamos las cápsulas de papel en la bandeja para magdalenas.",
+            "Transcurridos 10 minutos sacaremos la mezcla del frigorífico, rellenamos con ella las 3/4 partes de cada cápsula de magdalena y ponemos unas pepitas de chocolate por encima. Si no tienes pepitas de chocolate, puedes sustituirlas por chocolate negro picado.",
+            "Cuando tengamos todos los moldes rellenos, los metemos en el horno durante 15-18 minutos dependiendo de cada horno.",
+            "Para saber si las magdalenas ya están listas, basta con clavar un palillo en una de ellas, y si sale completamente limpio, es que ya están bien cocidas por dentro.",
+            "Sacamos del horno y dejamos enfriar a temperatura ambiente sobre una rejilla antes de probar nuestras magdalenas de chocolate. Buen provecho!!"
+    ]
+},
+{
+    "nombre": "Galletas cookies",
+    "imagen": "/images/recetas/galletas-cookies.png",
+    "tiempoTotal": "30 min",
+    "ingredientes": ["300 gr de harina de trigo", "200 gr de tableta de chocolate negro o chispitas", "90 gr de chocolate blanco", "150 gr de azúcar blanco", "150 gr de azúcar moreno", "225 gr de mantequilla sin sal", "2 huevos", "1 cucharadita de sal", "½ cucharadita de bicarbonato", "1 cucharadita de esencia de vainilla", "½ sobre de levadura en polvo Royal"],
+    "pasos": [
+            "Empezamos añadiendo en un bol grande los ingredientes secos, primero la harina tamizada junto con la levadura, agregamos el bicarbonato y la cucharadita de sal, mezclamos todo bien y reservamos.",
+            "En el bol de la amasadora ponemos la mantequilla a temperatura ambiente, que este blanda pero no derretida. Le añadimos el azúcar moreno que hemos rallado para quitarle el grano con la batidora y el azúcar blanco, batimos y le agregamos los huevos de uno en uno, mezclamos, le incorporamos la esencia de vainilla y terminamos de batir.",
+            "Añadimos ahora la mezcla reservada de la harina, vamos echando a cucharadas a medida que se bate hasta acabarla.",
+            "Después de amasarlo, añadimos los trozos de chocolate cortados en virutas y las chispitas de chocolate, removemos lentamente con una lengua pastelera o cuchara, para que se reparta por toda la masa. La metemos en el frigorífico por 30 minutos, tapada con film para que endurezca.",
+            "Precalentamos el horno a 190 ºC con calor uniforme arriba y abajo y mientras, haremos con la masa pequeñas bolitas que colocaremos en una fuente de horno forrada con papel vegetal.",
+            "Las pesamos para que sean todas iguales, yo las hice de 40 gr aproximadamente, podemos emplear una cuchara de helados o normal, las hacemos y aplastamos un poco y las vamos dejando en la bandeja con bastante separación porque al hornear se expanden.",
+            "Las metemos al horno durante 9 a 10 minutos y pasado el tiempo tendrán el borde doradito, las sacamos aunque las veamos blandas y esperamos 4 minutos antes de pasarlas a la rejilla para que pierdan la humedad, no las tocamos antes porque se nos romperán.",
+            "Cuando enfríen, endurecerán y ya las tendremos listas!. Acompáñalas de un buen batido o café, y a disfrutar de estas ricas galletas cookies!"
+    ]
+}
+]

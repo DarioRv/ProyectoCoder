@@ -1,3 +1,22 @@
+import {mostrarAlert} from "./alerts.js"
+const CONTENEDOR_CARRITO = document.querySelector(".carrito-container")
+class Producto{
+    constructor(imagen, nombre, precio, cantidad){
+        this.imagen = imagen
+        this.nombre = nombre
+        this.precio = precio
+        this.cantidad = cantidad
+    }
+    // En cada objeto se podra calcular el subtotal dependiendo del precio y la cantidad
+    subtotal(){
+        let cantidad = parseInt(this.cantidad)
+        let precio = this.precio
+        // Necesito quitar el '$' de mi precio para tratarlo como int, por eso uso la funcion subtring
+        precio = Number(precio.substring(1, precio.length))
+        return cantidad * precio
+    }
+}
+export let listaCarrito = []
 
 let calcularTotalCarrito = (listaCarrito) => {
     let total = 0
@@ -20,19 +39,22 @@ let mostrarCantidadArticulosCarrito = (listaCarrito) => {
         ICONO_CANTIDAD.style.display = "none"
     }
 }
-let vaciarCarrito = (LISTA_CARRITO_HTML_CONTEXT, listaCarrito) => {
+let vaciarCarrito = (listaCarrito) => {
+    const LISTA_CARRITO = CONTENEDOR_CARRITO.querySelector(".carrito-content").querySelector("ul")
     const MENSAJE_CONTENIDO_VACIO = "Tu carrito está vacío"
     const BTN_VACIAR_CARRITO = CONTENEDOR_CARRITO.querySelector(".btn-vaciar-carrito")
     BTN_VACIAR_CARRITO.addEventListener("click", function(){
         while(listaCarrito.pop() != undefined){
             listaCarrito.pop()
         }
-        listaCarrito.pop()
         calcularTotalCarrito(listaCarrito)
         mostrarCantidadArticulosCarrito(listaCarrito)
-        LISTA_CARRITO_HTML_CONTEXT.innerHTML = `<p>${MENSAJE_CONTENIDO_VACIO}</p>`
+        LISTA_CARRITO.innerHTML = `<p>${MENSAJE_CONTENIDO_VACIO}</p><button class="total"></button>`
         sessionStorage.removeItem("listaCarrito")
-        mostrarAlert("check-alert", "SE QUITARON TODOS LOS PRODUCTOS")
+        mostrarAlert({
+            type: "check-alert", 
+            text: "SE QUITARON TODOS LOS PRODUCTOS"
+        })
     })
 }
 let generarEstructuraHtml = (producto) => {
@@ -64,8 +86,10 @@ let imprimirHTMLListaCarrito = () => {
         LISTA_CARRITO.innerHTML += generarEstructuraHtml(item);
     }
     LISTA_CARRITO.innerHTML += `<button class="btn-vaciar-carrito">Vaciar Carrito</button>`
-    LISTA_CARRITO.innerHTML += `<button class="total" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>`
-    vaciarCarrito(LISTA_CARRITO, listaCarrito)
+    //LISTA_CARRITO.innerHTML += `<button class="total" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>`
+    LISTA_CARRITO.innerHTML += `<button class="total"></button>`
+    vaciarCarrito(listaCarrito)
+    generarComprobante()
 }
 let determinarExistencia = (lista, objeto) => {
     let existe = false
@@ -76,7 +100,7 @@ let determinarExistencia = (lista, objeto) => {
     }
     return existe
 }
-let recuperarDatosListaCarrito = (datosCarritoSessionStorage, listaCarrito) => {
+export let recuperarDatosListaCarrito = (datosCarritoSessionStorage, listaCarrito) => {
     if (datosCarritoSessionStorage != null){
         datosCarritoSessionStorage = datosCarritoSessionStorage.substring(2, datosCarritoSessionStorage.length - 2)
         let objeto = datosCarritoSessionStorage.split("},{")
@@ -131,20 +155,17 @@ let crearObjetoProducto = (productoHtmlContext) => {
     let productoGenerado = new Producto(imagenProducto, nombreProducto, precioProducto, cantidadProducto)
     return productoGenerado
 }
-let mostrarCartelInformacion = () => {
-    const CARTEL_INFORMACION = document.querySelector(".info-alert")
-    CARTEL_INFORMACION.style.display = "flex"
-    setTimeout(() => { CARTEL_INFORMACION.style.display = "none" }, 1000)
-}
-let agregarProductosAlCarrito = (listaCarrito, PRODUCTOS_DISPONIBLES) => {
+export let agregarProductosAlCarrito = (listaCarrito, PRODUCTOS_DISPONIBLES) => {
     for (let item of PRODUCTOS_DISPONIBLES){
         const BTN_PEDIR = item.querySelector(".btn-pedir")
         BTN_PEDIR.addEventListener("click", () => {
             let nuevoProducto = crearObjetoProducto(item)
             if (determinarExistencia(listaCarrito, nuevoProducto) == false){
                 listaCarrito.push(nuevoProducto)
-                mostrarAlert("info-alert", "PRODUCTO AGREGADO")
-                //mostrarCartelInformacion()
+                mostrarAlert({
+                    type: "info-alert",
+                    text: "PRODUCTO AGREGADO"
+                })
                 sessionStorage.setItem("listaCarrito", JSON.stringify(listaCarrito))
                 imprimirHTMLListaCarrito()
                 calcularTotalCarrito(listaCarrito)
@@ -152,9 +173,73 @@ let agregarProductosAlCarrito = (listaCarrito, PRODUCTOS_DISPONIBLES) => {
                 controlDeUnidades(listaCarrito)
             }
             else{
-                mostrarAlert("error-alert", "EL PRODUCTO YA ESTA AGREGADO")
-                delete nuevoProducto
+                let productosEnCarrito = document.querySelectorAll(".producto-deseado")
+                for (let subitem of productosEnCarrito){
+                    if (subitem.querySelector("h5").textContent == nuevoProducto.nombre){
+                        subitem.querySelector("input").value = Number(subitem.querySelector("input").value) + 1
+                        for (let i of listaCarrito){
+                            if (i.nombre == subitem.querySelector("h5").textContent){
+                                i.cantidad += 1
+                                subitem.querySelector(".producto-subtotal").textContent = `Subtotal: $${i.subtotal()}`
+                                calcularTotalCarrito(listaCarrito)
+                                sessionStorage.setItem("listaCarrito", JSON.stringify(listaCarrito))
+                            }
+                        }
+                    }
+                }
+                mostrarAlert({
+                    type: "info-alert", 
+                    text: "UNIDAD AGREGADA"
+                })
             }
         })
     }
+}
+
+let generarFecha = () => {
+    let DateTime = luxon.DateTime
+    let fecha = DateTime.now()
+    return fecha.toLocaleString(DateTime.DATE_FULL) + " - " + fecha.toLocaleString(DateTime.TIME_24_WITH_SECONDS)
+}
+export let generarComprobante = () => {
+    document.querySelector(".total").addEventListener("click", () => {
+    document.querySelector(".carrito-container").style.display = "none"
+    let popUp = document.querySelector(".container-pop-up")
+    if (popUp.style.display == "flex"){
+            popUp.style.display = "none"
+    }
+    else{
+        popUp.style.display = "flex"
+    }
+    let botonCerrarPop = popUp.querySelector("span")
+    botonCerrarPop.addEventListener("click", () => {
+        popUp.style.display = "none"
+    })
+    // Mensaje
+    popUp.querySelector(".pop-up-header").querySelector("h5").textContent = "COMPROBANTE"
+    popUp.querySelector(".pop-up-body").innerHTML = ""
+    let div = document.createElement("div")
+    div.setAttribute("class", "comprobante")
+    popUp.querySelector(".pop-up-body").append(div)
+    popUp.querySelector(".pop-up-body").querySelector(".comprobante").innerHTML = `
+    <h5>Ideal</h5>
+    <div>Compra Online</div>
+    <div>Ticket Nº: #########</div>
+    <div class="fecha">${generarFecha()}</div>
+    <div class="columnas">PRODUCTO <span>SUBTOTAL</span></div>
+    `
+    for (let i of listaCarrito){
+        popUp.querySelector(".pop-up-body").querySelector(".comprobante").innerHTML += `
+            <p class="item">${i.nombre} x${i.cantidad} <span>$${i.subtotal()}</span></p>
+        `
+    }
+    popUp.querySelector(".pop-up-body").querySelector(".comprobante").innerHTML += `
+    <p class="ticket-total">${document.querySelector(".total").textContent}</p>
+    <p>¡GRACIAS POR SU COMPRA!</p>
+    `
+    mostrarAlert({
+        type: "check-alert", 
+        text: "PEDIDO RECIBIDO"
+    })
+    })
 }

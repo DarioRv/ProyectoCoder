@@ -136,7 +136,7 @@ function getComputedStyle(el) {
   };
 };
 
-export default class WOW {
+class WOW {
   defaults = {
     boxClass: 'wow',
     animateClass: 'animated',
